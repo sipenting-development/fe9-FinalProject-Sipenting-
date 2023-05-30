@@ -4,8 +4,8 @@ import HeroCekKon from "../components/HeroCekKon";
 
 function Konsultasi() {
   return (
-    <Container>
-      <Row>
+    <>
+      {/* <Row>
         <Col lg={6} mb={5}>
           <DaftarKonselor
             img={
@@ -37,8 +37,8 @@ function Konsultasi() {
           />
         </Col>
       </Row>
-      <HeroCekKon />
-    </Container>
+      <HeroCekKon /> */}
+    </>
   );
 }
 

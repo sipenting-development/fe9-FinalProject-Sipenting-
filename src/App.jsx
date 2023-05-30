@@ -1,9 +1,9 @@
-import Konsultasi from "./pages/Konsultasi";
+import CekImt from "./pages/CekImt";
 
 function App() {
   return (
     <>
-      <Konsultasi />
+      <CekImt />
     </>
   );
 }
