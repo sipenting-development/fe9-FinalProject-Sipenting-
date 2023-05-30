@@ -15,14 +15,14 @@ const BmiCalculator = () => {
   };
 
   return (
-    <Container className="text-center mt-5">
-      <h3 className="fw-bold mt-7 mb-4 fs-3">Masukkan Data Index IMT Anda</h3>
-      <Form onSubmit={handleSubmit}>
+    <Container className="mt-5">
+      <h3 className="fw-bold mt-7 mb-4 fs-3 text-center">Masukkan Data Index IMT Anda</h3>
+      <Form onSubmit={handleSubmit} className="text-start fw-bold">
         <Row className="mt-4">
           <Col md={6}>
             <Form.Group>
-              <Form.Label className="p-2 fs-6">Nama Lengkap</Form.Label>
-              <Form.Control type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder="Masukkan Nama" required />
+              <Form.Label className="p-2 fs-6 fw-1">Nama Lengkap</Form.Label>
+              <Form.Control className="rounded-5" type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder="Masukkan Nama" required />
             </Form.Group>
             <Form.Group>
               <Form.Label className="p-2 fs-6">Pilih Jenis Kelamin</Form.Label>
@@ -34,21 +34,21 @@ const BmiCalculator = () => {
             </Form.Group>
             <Form.Group>
               <Form.Label className="p-2 fs-6">Berat Badan (kg)</Form.Label>
-              <Form.Control type="number" value={bb} onChange={(e) => setBb(e.target.value)} placeholder="Masukkan Berat Badan" required />
+              <Form.Control className="rounded-5" type="number" value={bb} onChange={(e) => setBb(e.target.value)} placeholder="Masukkan Berat Badan" required />
             </Form.Group>
           </Col>
           <Col md={6}>
             <Form.Group>
               <Form.Label className="p-2 fs-6">Tanggal Lahir</Form.Label>
-              <Form.Control type="date" value={tl} onChange={(e) => setTl(e.target.value)} required />
+              <Form.Control className="rounded-5" type="date" value={tl} onChange={(e) => setTl(e.target.value)} required />
             </Form.Group>
             <Form.Group>
               <Form.Label className="p-2 fs-6">Umur (tahun)</Form.Label>
-              <Form.Control type="number" value={umur} onChange={(e) => setUmur(e.target.value)} placeholder="Masukkan Umur" required />
+              <Form.Control className="rounded-5" type="number" value={umur} onChange={(e) => setUmur(e.target.value)} placeholder="Masukkan Umur" required />
             </Form.Group>
             <Form.Group>
               <Form.Label className="p-2 fs-6">Tinggi Badan (cm)</Form.Label>
-              <Form.Control type="number" value={tinggi} onChange={(e) => setTinggi(e.target.value)} placeholder="Masukkan Tinggi" required />
+              <Form.Control className="rounded-5" type="number" value={tinggi} onChange={(e) => setTinggi(e.target.value)} placeholder="Masukkan Tinggi" required />
             </Form.Group>
           </Col>
         </Row>
@@ -58,6 +58,7 @@ const BmiCalculator = () => {
           </Button>
         </div>
       </Form>
+
       {hasil && (
         <Alert variant="success" className="mt-4">
           <p>Nama: {nama}</p>
