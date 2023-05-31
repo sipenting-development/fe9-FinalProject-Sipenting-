@@ -18,18 +18,31 @@ export const BmiProvider = ({ children }) => {
 
     // Menentukan kategori BMI
     let kategori = "";
-    if (bmi < 18.5) {
-      kategori = "Berat badan kurang";
-    } else if (bmi >= 18.5 && bmi < 24.9) {
-      kategori = "Berat badan normal";
-    } else if (bmi >= 25 && bmi < 29.9) {
-      kategori = "Berat badan berlebih";
+    if (umur < 24) {
+      if (bmi < 11) {
+        kategori = "Kurus";
+      } else if (bmi >= 11 && bmi < 18) {
+        kategori = "Normal";
+      } else {
+        kategori = "Gemuk";
+      }
     } else {
-      kategori = "Obesitas";
+      if (bmi < 13) {
+        kategori = "Kurus";
+      } else if (bmi >= 13 && bmi < 20) {
+        kategori = "Normal";
+      } else {
+        kategori = "Gemuk";
+      }
     }
 
     // Menyimpan hasil BMI
     setHasil(`BMI: ${bmi.toFixed(2)}, Kategori: ${kategori}`);
+  };
+
+  const setBbHandler = (value) => {
+    const bbValue = value.length <= 3 ? value : value.slice(0, 3);
+    setBb(bbValue);
   };
 
   const clearData = () => {
@@ -50,7 +63,7 @@ export const BmiProvider = ({ children }) => {
         jk,
         setJk,
         bb,
-        setBb,
+        setBb: setBbHandler,
         tl,
         setTl,
         umur,
