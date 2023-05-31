@@ -1,16 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
+import "./herocekonsul.css";
 
 const HeroCekKonsul = ({ img, title, descrip }) => {
   return (
-    <Container>
+    <Container className="mb-5">
       <Row className="align-items-center my-5">
-        <Col lg={5} className="pt-5 text-center">
-          <img className="rounded mb-4 mb-lg-0 consultation-main-image" src={img} alt="..." />
+        <Col lg={7} className="pt-5 text-center">
+          <img className="rounded mb-4 mb-lg-0 consultation-main-image img-fluid" src={img} alt="..." />
         </Col>
-        <Col lg={7} className="mt-lg-0 mt-4 text-left">
-          <h2 className="fw-bold mb-3 ">
+        <Col lg={5} className="mt-lg-0 mt-4 text-left text-sm-center   titledes">
+          <h2 className="fw-bold mb-3  ">
             {" "}
-            Yuk Pilih <span>{title}</span>{" "}
+            Yuk Pilih <span className="singkatan ">{title}</span>{" "}
           </h2>
           <p>{descrip}</p>
         </Col>

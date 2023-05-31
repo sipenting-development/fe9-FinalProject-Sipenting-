@@ -1,6 +1,6 @@
 import DaftarKonselor from "../components/DaftarKonselor";
 import { Container, Col, Row } from "react-bootstrap";
-import HeroCekKon from "../components/HeroCekKon";
+import HeroCekKon from "../components/HeroCekKonsul";
 
 function Konsultasi() {
   return (
