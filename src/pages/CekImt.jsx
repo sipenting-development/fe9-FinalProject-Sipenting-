@@ -8,9 +8,8 @@ function CekImt(params) {
       <BmiProvider>
         <BmiCalculator />
       </BmiProvider>
-      <div>
-        <Footer />
-      </div>
+
+      <Footer />
     </>
   );
 }

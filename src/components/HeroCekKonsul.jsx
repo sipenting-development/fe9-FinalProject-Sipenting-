@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-const HeroCekKon = ({ img, title, descrip }) => {
+const HeroCekKonsul = ({ img, title, descrip }) => {
   return (
     <Container>
       <Row className="align-items-center my-5">
@@ -19,4 +19,4 @@ const HeroCekKon = ({ img, title, descrip }) => {
   );
 };
 
-export default HeroCekKon;
+export default HeroCekKonsul;
