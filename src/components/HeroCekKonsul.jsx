@@ -3,7 +3,7 @@ import "./herocekonsul.css";
 
 const HeroCekKonsul = ({ img, title, descrip }) => {
   return (
-    <Container className="mb-5">
+    <Container>
       <Row className="align-items-center my-5">
         <Col lg={7} className="pt-5 text-center">
           <img className="rounded mb-4 mb-lg-0 consultation-main-image img-fluid" src={img} alt="..." />

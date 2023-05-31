@@ -12,7 +12,8 @@ function CekImt(params) {
           title={"Cek Status Gizi !"}
           descrip={"Pantau pertumbuhan dan perkembangan anak Anda secara berkala. Untuk mengetahui seberapa sehat anak Anda. Cek kondisi anak Anda bisa menggunakan layanan kami. "}
         />
-        <BmiProvider className="mt-5">
+
+        <BmiProvider>
           <BmiCalculator />
         </BmiProvider>
         <Footer />
