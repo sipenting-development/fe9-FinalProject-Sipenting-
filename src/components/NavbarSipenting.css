@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.nav-link active {
+  color: #54bca4;
+}
+
+#responsive-navbar-nav .nav-link {
+  color: #5f6d7e;
+}
+
+#responsive-navbar-nav .nav-link:hover {
+  color: #54bca4;
+}
+
+#responsive-navbar-nav .btndaftar {
+  align-items: center;
+  border-color: #54bca4;
+  color: #54bca4;
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#responsive-navbar-nav .btnmasuk {
+  align-items: center;
+  background-color: #54bca4;
+  color: #ffffff;
+  border-color: #54bca4;
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+#responsive-navbar-nav .btndaftar:hover {
+  background-color: #eefcf3;
+  color: #54bca4;
+  border: 1px solid #54bca4;
+}
+
+#responsive-navbar-nav .btnmasuk:hover {
+  background-color: #a6ddcf;
+  color: #ffffff;
+  border: 1px solid;
+}

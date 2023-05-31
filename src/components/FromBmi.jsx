@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { BmiContext } from "../context/BmiContex";
-import "./form.css";
+import "./Form.css";
 
 const BmiCalculator = () => {
   const { nama, setNama, jk, setJk, bb, setBb, tl, setTl, umur, setUmur, tinggi, setTinggi, hasil, calculateBmi, clearData } = useContext(BmiContext);
