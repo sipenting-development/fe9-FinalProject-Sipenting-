@@ -44,7 +44,7 @@ const BmiCalculator = () => {
               <Form.Control className="rounded-5" type="date" value={tl} onChange={(e) => setTl(e.target.value)} required />
             </Form.Group>
             <Form.Group>
-              <Form.Label className="p-2 fs-5">Umur (tahun)</Form.Label>
+              <Form.Label className="p-2 fs-5">Umur (bulan)</Form.Label>
               <Form.Control className="rounded-5" type="number" value={umur} onChange={(e) => setUmur(e.target.value)} placeholder="Masukkan Umur" required />
             </Form.Group>
             <Form.Group>
