@@ -23,20 +23,20 @@ function NavbarSipenting() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-item navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
             <Nav.Link
-              href="#"
+              to="/"
               className="nav-link active pe-5"
               aria-current="page"
               style={{ color: "#54BCA4", fontWeight: "bold" }}
             >
               Beranda
             </Nav.Link>
-            <Nav.Link href="#" className="nav-link pe-5">
+            <Nav.Link to="/" className="nav-link pe-5">
               Layanan Kami
             </Nav.Link>
-            <Nav.Link href="#" className="nav-link pe-5">
+            <Nav.Link to="/" className="nav-link pe-5">
               Cek IMT
             </Nav.Link>
-            <Nav.Link href="#" className="nav-link pe-5">
+            <Nav.Link to="/" className="nav-link pe-5">
               Artikel
             </Nav.Link>
           </Nav>
