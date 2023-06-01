@@ -12,6 +12,11 @@ export const BmiProvider = ({ children }) => {
   const [hasil, setHasil] = useState("");
 
   const calculateBmi = () => {
+    //agar bilai inputan tidak minus dan 0
+    if (bb <= 0 || tinggi <= 0) {
+      setHasil("Berat badan dan tinggi harus lebih dari 0");
+      return;
+    }
     // Menghitung nilai BMI
     const tinggiMeter = tinggi / 100;
     const bmi = bb / (tinggiMeter * tinggiMeter);
@@ -37,12 +42,16 @@ export const BmiProvider = ({ children }) => {
     }
 
     // Menyimpan hasil BMI
-    setHasil(`BMI: ${bmi.toFixed(2)}, Kategori: ${kategori}`);
+    setHasil(` ${bmi.toFixed(1)}, ${kategori}`);
   };
 
   const setBbHandler = (value) => {
-    const bbValue = value.length <= 3 ? value : value.slice(0, 3);
+    const bbValue = value <= 0 ? "" : value.length <= 3 ? value : value.slice(0, 3);
     setBb(bbValue);
+  };
+  const setTinggiHandler = (value) => {
+    const tinggiValue = value <= 0 ? "" : value.length <= 3 ? value : value.slice(0, 3);
+    setTinggi(tinggiValue);
   };
 
   const clearData = () => {
@@ -69,7 +78,7 @@ export const BmiProvider = ({ children }) => {
         umur,
         setUmur,
         tinggi,
-        setTinggi,
+        setTinggi: setTinggiHandler,
         hasil,
         calculateBmi,
         clearData,

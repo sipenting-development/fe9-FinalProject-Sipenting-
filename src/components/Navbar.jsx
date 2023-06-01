@@ -10,7 +10,7 @@ import "./navbarsipenting.css";
 
 function NavbarSipenting() {
   return (
-    <Navbar bg="light" variant="light" expand="lg" fixed="top" className="nav shadow-sm">
+    <Navbar bg="white " expand="lg" fixed="top" className="nav shadow-sm">
       <Container>
         <Navbar.Brand href="#logo">
           <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150" />
@@ -18,16 +18,16 @@ function NavbarSipenting() {
         <Navbar.Toggle aria-controls="reponsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-item navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
-            <Nav.Link href="#" className="nav-link active pe-5" aria-current="page" style={{ color: "#54BCA4", fontWeight: "bold" }}>
+            <Nav.Link to="/" className="nav-link " aria-current="page" style={{ color: "#54BCA4", fontWeight: "bold" }}>
               Beranda
             </Nav.Link>
-            <Nav.Link href="#" className="nav-link pe-5">
+            <Nav.Link to="/" className="nav-link pe-5">
               Layanan Kami
             </Nav.Link>
-            <Nav.Link href="#" className="nav-link pe-5">
-              Cek IMT
+            <Nav.Link to="/" className="nav-link active pe-5" aria-current="page" style={{ color: "#54BCA4", fontWeight: "bold" }}>
+              Cek Gizi
             </Nav.Link>
-            <Nav.Link href="#" className="nav-link pe-5">
+            <Nav.Link to="/" className="nav-link pe-5">
               Artikel
             </Nav.Link>
           </Nav>

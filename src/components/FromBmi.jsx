@@ -17,7 +17,7 @@ const BmiCalculator = () => {
 
   return (
     <Container className="mt-5  form">
-      <h3 className="fw-bold mt-7 mb-4 fs-3 text-center ">Masukkan Data Index IMT Anda</h3>
+      <h3 className="fw-bold mt-7 mb-4 fs-3 text-center ">Masukkan Data Index Cek Gizi</h3>
       <Form onSubmit={handleSubmit} className="text-start fw-bold">
         <Row className="mt-4">
           <Col md={6}>
@@ -53,7 +53,7 @@ const BmiCalculator = () => {
             </Form.Group>
           </Col>
         </Row>
-        <div className="mt-4 text-sm-center mb-5 mt-5">
+        <div className="mt-4 text-center text-lg-center mb-5 mt-5">
           <Button type="submit" className="btn-custom btclor py-2 px-5 rounded-5 fs-6" id="cekstunting1" style={{ backgroundColor: "#54bca4" }}>
             Mulai Cek
           </Button>
@@ -66,28 +66,28 @@ const BmiCalculator = () => {
             <div className="col-lg-8 offset-lg-2 d-flex align-items-center justify-content-center">
               <div className="fw-semibold fs-5 float-start">
                 <div className="row">
-                  <div className="col-md-5">Nama</div>
-                  <div className="col-md-7"> : {nama}</div>
+                  <div className="col-md-7">Nama</div>
+                  <div className="col-md-5"> : {nama}</div>
                 </div>
                 <div className="row">
-                  <div className="col-md-5">Umur</div>
-                  <div className="col-md-7"> : {umur}</div>
+                  <div className="col-md-7">Umur</div>
+                  <div className="col-md-5"> : {umur}</div>
                 </div>
                 <div className="row">
-                  <div className="col-md-5">Berat Badan</div>
-                  <div className="col-md-7"> : {bb}</div>
+                  <div className="col-md-7">Berat Badan</div>
+                  <div className="col-md-5"> : {bb}</div>
                 </div>
                 <div className="row">
-                  <div className="col-md-5">Tinggi Badan</div>
-                  <div className="col-md-7"> : {tinggi}</div>
+                  <div className="col-md-7">Tinggi Badan</div>
+                  <div className="col-md-5"> : {tinggi}</div>
                 </div>
                 <div className="row">
-                  <div className="col-md-5">jenis kelamin</div>
-                  <div className="col-md-7"> : {jk}</div>
+                  <div className="col-md-7">jenis kelamin</div>
+                  <div className="col-md-5"> : {jk}</div>
                 </div>
                 <div className="row">
-                  <div className="col-md-5">Hasil </div>
-                  <div className="col-md-7"> : {hasil}</div>
+                  <div className="col-md-7">Hasil </div>
+                  <div className="col-md-5"> : {hasil}</div>
                 </div>
               </div>
             </div>
