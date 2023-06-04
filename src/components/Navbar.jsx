@@ -18,7 +18,7 @@ function NavbarSipenting() {
         <Navbar.Toggle aria-controls="reponsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-item navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
-            <Nav.Link to="/" className="nav-link " aria-current="page" style={{ color: "#54BCA4", fontWeight: "bold" }}>
+            <Nav.Link to="/" className="nav-link ">
               Beranda
             </Nav.Link>
             <Nav.Link to="/" className="nav-link pe-5">

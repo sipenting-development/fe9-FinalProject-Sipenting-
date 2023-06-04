@@ -16,6 +16,7 @@ const HeroCekKonsul = ({ img, title, descrip }) => {
           <p>{descrip}</p>
         </Col>
       </Row>
+      <hr class="bg-white mt-sm-5 pt-sm-5" />
     </Container>
   );
 };
