@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+:root {
+  --primary: #54bca4;
+  --font: #3a3c3b;
+  --title: #98a09c;
+  --white: #ffffff;
+  --hoverbtn: #eefcf3;
+  --hoverbtnmasuk: #a6ddcf;
+  --navoff: #5f6d7e;
+  --hr: #c9d9d2;
+  --footer: #1b443b;
+}
+
 .hero {
   font-family: "Poppins", sans-serif;
-  color: #3a3c3b;
+  color: var(--font);
 }
 
 .hero-view {
@@ -14,11 +26,11 @@
 }
 
 .singkatan {
-    color: #54bca4;
+    color: var(--primary);
 }
   
 .hero-content p {
-  color: #98a09c;
+  color: var(--title);
   line-height: 38px;
 }
 
@@ -26,20 +38,20 @@
   padding: 0.5rem 2rem;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #54bca4;
+  background-color: var(--primary);
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .hero .btncek:hover {
-  background-color: #eefcf3;
-  color: #54bca4;
-  border: 1px solid #54bca4;
+  background-color: var(--hoverbtn);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 
 .hero hr {
   margin: 70px auto;
   border: none;
-  border-bottom: solid 4px #c9d9d2;
+  border-bottom: solid 4px var(--hr);
   border-radius: 8px;
 }
