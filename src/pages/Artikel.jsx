@@ -4,6 +4,7 @@ import NavbarSipenting from "../components/Navbar";
 import CardArtikel from "../components/CardArtikel";
 import Footer from "../components/Footer";
 import "../components/Artikel.css";
+import ArticleList from "../components/ListArtikel";
 // import "../component/artikel.css";
 // import NavbarSipenting from "../component/Navbar";
 // import CardArtikel from "../component/CardArtikel";
@@ -52,6 +53,16 @@ function Artikel(params) {
               </Row>
             </Container>
           </div>
+          <section className="artikel">
+            <Container className="text-start">
+              <h3 className="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">Artikel Terkait</h3>
+              <Container>
+                <Row>
+                  <ArticleList />
+                </Row>
+              </Container>
+            </Container>
+          </section>
           <Footer />
         </Stack>
       </div>
