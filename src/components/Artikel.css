@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+.judul-list-artikel {
+  font-size: 44px;
+}
+
+.text-warna {
+  color: #54bca4;
+}
+
+.hero-artikel-content a {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.hero-artikel-content h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero-artikel-deskripsi {
+  font-size: 20px;
+  margin-top: 12px;
+  color: #98a09c;
+}
+
+.hero-artikel-image img {
+  width: 800px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card {
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-image {
+  float: inline-end;
+}
+
+.card-image img {
+  width: 491px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.card-body {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.card-body .jenis-artikel {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.card-body .card-title {
+  font-size: 32px;
+}
+
+.card-body .card-text {
+  font-size: 20px;
+  margin-top: 12px;
+  text-align: justify;
+  color: #98a09c;
+}
+
+.card-body .card-link {
+  font-size: 18px;
+  color: #54bca4;
+}
