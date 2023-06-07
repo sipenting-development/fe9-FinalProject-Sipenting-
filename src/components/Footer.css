@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+:root {
+  --primary: #54bca4;
+  --font: #3a3c3b;
+  --title: #98a09c;
+  --white: #ffffff;
+  --hoverbtn: #eefcf3;
+  --hoverbtnmasuk: #a6ddcf;
+  --navoff: #5f6d7e;
+  --hr: #c9d9d2;
+  --footer: #1b443b;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,37 +19,28 @@
 }
 
 .footercolo {
-  background-color: #1b443b;
+  background-color: var(--footer);
   font-family: "Poppins", sans-serif;
 }
 
-/* .footericons a {
-  font-size: 2rem;
-  color: white;
-} */
-
 .footercolo .flogo {
-  margin-bottom: -10px;
+    margin-bottom: -10px;
 }
 
 .footercolo .fslogan {
-  line-height: 30px;
+    line-height: 30px;
 }
-
-/* .footercolo .fmenu {
-    margin-inline-end: -10px;
-} */
 
 .footercolo hr {
   margin-top: -40px;
   border: none;
-  border-bottom: solid 3px #c9d9d2;
+  border-bottom: solid 3px var(--hr);
   border-radius: 8px;
 }
 
 .footercolo .ficon {
-  margin-top: 20px;
-  margin-left: -12px;
+    margin-top: 20px;
+    margin-left: -12px;
 }
 
 .footercolo .dev {
@@ -45,13 +48,13 @@
 }
 
 .footercolo .fcopyright {
-  margin-inline-end: 440px;
+  margin-inline-end: 380px;
 }
 
 .footercolo .fsyarat {
-  margin-inline-end: 50px;
+  margin-inline-end: 10px;
 }
 
 .footercolo .fkebijakan {
-  margin-inline-end: -50px;
+  margin-inline-end: -10px;
 }

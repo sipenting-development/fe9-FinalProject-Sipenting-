@@ -1,8 +1,9 @@
-import Artikel from "./pages/Artikel";
+import LandingPage from "./pages/LandingPage";
+
 function App() {
   return (
     <>
-      <Artikel />
+      <LandingPage />
     </>
   );
 }
