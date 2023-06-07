@@ -9,15 +9,32 @@ function Footer(params) {
         <Container>
           <Row className="pt-5 pb-5 d-flex justify-content-around">
             <Col md={4} lg={4}>
-              <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/white-logo_oh7nw5.png" className="flogo" width={"180"} alt="" />
+              <img
+                src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/white-logo_oh7nw5.png"
+                className="flogo"
+                width={"180"}
+                alt=""
+              />
               <p className="fslogan fw-medium text-white mt-4 fs-6">
                 Cegah stunting itu penting <br /> bersama <span className="dev">SIPENTING</span>. <br />
                 <span className="dev">#SayNoToStunting</span>
               </p>
               <div className="ficon d-flex justify-content-start">
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/Facebook_u6ren2.png" width={"60"} alt="" />
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/Twitter_n5xxvy.png" width={"60"} alt="" />
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/Instagram_leicpi.png" width={"60"} alt="" />
+                <img
+                  src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/Facebook_u6ren2.png"
+                  width={"60"}
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/Twitter_n5xxvy.png"
+                  width={"60"}
+                  alt=""
+                />
+                <img
+                  src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/Instagram_leicpi.png"
+                  width={"60"}
+                  alt=""
+                />
               </div>
             </Col>
             <Col md={4} lg={3} className="mt-4 mt-md-0 ffotermenu">
@@ -62,21 +79,30 @@ function Footer(params) {
               <div>
                 <h5 className="text-white fw-bold fs-5">Kontak Kami</h5>
                 <div className="mt-3 fw-medium text-white">
-                  <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/email_asuufb.png" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/email_asuufb.png"
+                    alt=""
+                  />
                   <span>
                     <a className="d-inline-flex ps-2 text-white mb-3 text-decoration-none fs-6" href="/#email">
                       halo@sipenting.net
                     </a>
                   </span>
                   <br />
-                  <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/telp_e9see9.png" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/telp_e9see9.png"
+                    alt=""
+                  />
                   <span>
                     <a className="d-inline-flex ps-2 text-white mb-3 text-decoration-none fs-6" href="/#cs">
                       +6289955000233 (cs)
                     </a>
                   </span>
                   <br />
-                  <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/location_emsdtc.png" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/location_emsdtc.png"
+                    alt=""
+                  />
                   <span>
                     <a className="d-inline-flex ps-2 text-white mb-3 text-decoration-none fs-6" href="/#location">
                       Jl. Bahagia No. 20 B, Bandung, <br /> Jawa Barat 40238
