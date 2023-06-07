@@ -1,11 +1,5 @@
-import NotFound from "./pages/ErrorPage";
-
 function App() {
-  return (
-    <>
-      <NotFound />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
