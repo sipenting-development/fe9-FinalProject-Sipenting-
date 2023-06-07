@@ -28,9 +28,12 @@ function CardArtikel() {
             </div>
             <div className="col-lg-7">
               <div className="card-body">
-                <h4 className="text-warna jenis-artikel"> {artikel.jenisArtikel}</h4>
+                <h4 className="text-warna jenis-artikel">{artikel.jenisArtikel}</h4>
                 <h6 className="card-title">{artikel.judulArtikel}</h6>
-                <p className="card-text text-justify">{artikel.rangkuman}</p>
+                <p className="card-text text-justify">
+                  {/* {artikel.rangkuman} */}
+                  {artikel.rangkuman.substring(0, 250)}
+                </p>
                 <div className="text-end">
                   <a href={artikel.link} style={{ textDecoration: "none" }} className="text-warna card-link fw-semibold">
                     Selengkapnya

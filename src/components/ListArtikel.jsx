@@ -26,8 +26,10 @@ function ArticleList() {
               <Card.Title className="jenis-artikel fs-18 fw-semibold" style={{ color: "#54BCA4" }}>
                 {article.jenisArtikel}
               </Card.Title>
-              <Card.Title>{article.judulArtikel}</Card.Title>
-              <Card.Text>{article.rangkuman}</Card.Text>
+              <Card.Title>{article.judulArtikel.substring(0, 35)}</Card.Title>
+              <Card.Text>
+                {article.rangkuman.substring(0, 150)}....
+              </Card.Text>
               <div className="text-end linkaertikel d-flex justify-content-end">
                 <Button href={`isianArtikel.html?id=${article.id}`} className="btn fs-5 selengkapnya fw-semibold" style={{ backgroundColor: "#54BCA4", color: "#ffffff" }}>
                   Selengkapnya
