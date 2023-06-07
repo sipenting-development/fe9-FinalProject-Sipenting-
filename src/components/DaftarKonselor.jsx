@@ -16,7 +16,9 @@ const DaftarKonselor = ({ img, nama, pengalaman, ratings }) => {
             <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "25px", color: rating === "yellow" ? "yellow" : "gray" }} />
           ))}
         </div>
-        <Button className="btn btn-primary mt-3 rounded-pill px-4 py-2">Konsultasi</Button>
+        <Button className="btn btn-primary mt-3 rounded-pill px-4 py-2 border border-white" style={{ backgroundColor: "#54BCA4" }}>
+          Konsultasi
+        </Button>
       </Col>
     </Row>
   );
