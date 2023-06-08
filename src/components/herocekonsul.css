@@ -16,3 +16,8 @@
 .titledes {
   font-family: Poppins, sans-serif;
 }
+.herohr {
+  border: none;
+  border-bottom: solid 4px var(--hr);
+  border-radius: 8px;
+}
