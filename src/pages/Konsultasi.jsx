@@ -17,7 +17,7 @@ function Konsultasi() {
             title={"Pilih Teman Konsultasimu !"}
             descrip={"Dapatkan konsultasi medis anak yang cepat dan mudah dari dokter kami yang berpengalaman. Konsultasi medis anak yang nyaman dan aman dari rumah Anda sendiri. "}
           />
-          <Alert className="mx-5 py-1 text-center konsul" variant="warning">
+          <Alert className="mx-5 py-1 text-center konsul" variant="danger">
             Karena masih dalam tahap pengembangan, maka fitur konseling masih digratiskan.
           </Alert>
           <div className="mb-5">
