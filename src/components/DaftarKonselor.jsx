@@ -17,7 +17,13 @@ const DaftarKonselor = ({ img, nama, pengalaman, ratings }) => {
             <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "25px", color: rating === "yellow" ? "yellow" : "gray" }} />
           ))}
         </div>
-        <Button className="btn mt-3 rounded-pill px-4 py-2" style={{ backgroundColor: "#54BCA4" }}>
+        <Button
+          className="btn mt-3 rounded-pill px-4 py-2"
+          style={{
+            backgroundColor: "#54BCA4",
+            borderColor: "#54BCA4", // Menambahkan properti borderColor dengan nilai "white"
+          }}
+        >
           <Link to="/chat" style={{ textDecoration: "none", color: "white" }}>
             Konsultasi
           </Link>
