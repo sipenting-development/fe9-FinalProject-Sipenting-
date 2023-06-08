@@ -4,6 +4,7 @@ import HeroCekKon from "../components/HeroCekKonsul";
 import Stack from "react-bootstrap/Stack";
 import NavbarSipenting from "../components/Navbar";
 import Footer from "../components/Footer";
+import "./konsultasi.css";
 
 function Konsultasi() {
   return (
@@ -16,13 +17,13 @@ function Konsultasi() {
             title={"Pilih Teman Konsultasimu !"}
             descrip={"Dapatkan konsultasi medis anak yang cepat dan mudah dari dokter kami yang berpengalaman. Konsultasi medis anak yang nyaman dan aman dari rumah Anda sendiri. "}
           />
-          <Alert className="mx-5 py-1 text-center  konsul" variant="success">
+          <Alert className="mx-5 py-1 text-center konsul" variant="warning">
             Karena masih dalam tahap pengembangan, maka fitur konseling masih digratiskan.
           </Alert>
           <div className="mb-5">
             <div className="d-flex justify-content-between mb-5 conselor-sections">
               <div className="left">
-                <h4 className=" mt-5 fw-5 fs-3 ms-5">Daftar konselor kami</h4>
+                <h4 className=" mt-5 fw-5 fs-3 ms-5 df">Daftar konselor kami</h4>
               </div>
             </div>
             <Container>

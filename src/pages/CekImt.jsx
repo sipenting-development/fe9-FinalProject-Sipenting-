@@ -29,14 +29,13 @@ function CekImt(params) {
               <div className="mb-3 mb-lg-0">
                 <p className="ms-0 fs-6 layanan 2">Dapatkan konsultasi medis anak yang cepat dan mudah dari konselor kami yang berpengalaman. Konsultasi medis anak yang nyaman dan aman dari rumah Anda sendiri</p>
               </div>
-              <div className="p-4 text-end">
-                <Link to="/konsultasi" className="btn rounded-5 px-5 py-2 text-sm-center fs-6 text-white fw-semibold d-inline-block" style={{ backgroundColor: "#54bca4" }}>
+              <div className="p-4 text-end ">
+                <Link to="/konsultasi" className=" konseling btn rounded-5 px-5 py-2 text-sm-center fs-6 text-white fw-semibold d-inline-block " style={{ backgroundColor: "#54bca4", fontFamily: "Poppins" }}>
                   Konseling
                 </Link>
               </div>
             </div>
           </Container>
-
           <Footer />
         </Stack>
       </div>

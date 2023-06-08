@@ -1,6 +1,6 @@
 import { Stack, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./NotFound.css";
+import "./notfound.css";
 
 function NotFound() {
   return (
