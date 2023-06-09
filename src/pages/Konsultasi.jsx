@@ -27,13 +27,13 @@ function Konsultasi() {
               </div>
             </div>
             <Container>
-              <Row>
+              <Row className="ms-5">
                 <Col lg={6} className="mb-5">
                   <DaftarKonselor
                     img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717664/Assets/ka_vt5udy.png"}
                     nama={"Endang Susiana, Sp.A."}
                     pengalaman={"5+ tahun pengalaman"}
-                    ratings={["yellow", "yellow", "yellow", "gray", "gray"]}
+                    ratings={["yellow", "yellow", "yellow", "#F0F0F0", "#F0F0F0"]}
                   />
                 </Col>
                 <Col lg={6} className="mb-5">
@@ -41,7 +41,7 @@ function Konsultasi() {
                     img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717663/Assets/kb_o0r2j8.png"}
                     nama={"Hotman Aruan, Sp.A."}
                     pengalaman={"2+ tahun pengalaman"}
-                    ratings={["yellow", "yellow", "yellow", "yellow", "yellow"]}
+                    ratings={["yellow", "yellow", "yellow", "yellow", "#F0F0F0"]}
                   />
                 </Col>
                 <Col lg={6} className="mb-5">
@@ -49,7 +49,7 @@ function Konsultasi() {
                     img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717660/Assets/kc_mcgein.png"}
                     nama={"Takasiani Antika, Sp.A."}
                     pengalaman={"3+ tahun pengalaman"}
-                    ratings={["yellow", "yellow", "yellow", "yellow", "gray"]}
+                    ratings={["yellow", "yellow", "yellow", "yellow", "#F0F0F0"]}
                   />
                 </Col>
                 <Col lg={6} className="mb-5">
@@ -57,7 +57,7 @@ function Konsultasi() {
                     img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717662/Assets/kd_ezb491.png"}
                     nama={"Devit Gurinda, Sp.A."}
                     pengalaman={"4+ tahun pengalaman"}
-                    ratings={["yellow", "yellow", "yellow", "yellow", "gray"]}
+                    ratings={["yellow", "yellow", "yellow", "yellow", "#F0F0F0"]}
                   />
                 </Col>
               </Row>

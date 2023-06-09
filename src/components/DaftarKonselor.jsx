@@ -14,7 +14,7 @@ const DaftarKonselor = ({ img, nama, pengalaman, ratings }) => {
         <p className="df">{pengalaman}</p>
         <div className="rating-group">
           {ratings.map((rating, index) => (
-            <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "25px", color: rating === "yellow" ? "yellow" : "gray" }} />
+            <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "23px", color: rating === "yellow" ? "#EBBB14" : "#F0F0F0" }} />
           ))}
         </div>
         <Button
