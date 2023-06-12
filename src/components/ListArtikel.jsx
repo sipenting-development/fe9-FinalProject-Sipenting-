@@ -9,7 +9,11 @@ function ArticleList() {
     axios
       .get("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
       .then((response) => {
-        setArticles(response.data);
+        // Sort articles by ID in descending order
+        const sortedArticles = response.data.sort((a, b) => b.id - a.id);
+        // Take the first three articles
+        const latestArticles = sortedArticles.slice(0, 3);
+        setArticles(latestArticles);
       })
       .catch((error) => {
         console.log(error);
@@ -20,18 +24,25 @@ function ArticleList() {
     <div className="row">
       {articles.map((article) => (
         <div className="col-md-4 row me-2 " key={article.id}>
-            <Card.Img className="p-2" src={article.gambar} alt={article.judul} style={{ objectFit: "cover", width: "100%", height: "250px" }} />
+          <Card.Img
+            className="p-2"
+            src={article.gambar}
+            alt={article.judul}
+            style={{ objectFit: "cover", width: "100%", height: "250px" }}
+          />
           <Card className="mb-4 shadow-sm mb-md-" style={{ width: "500px" }}>
             <Card.Body className="artikel">
               <Card.Title className="jenis-artikel fs-18 fw-semibold" style={{ color: "#54BCA4" }}>
                 {article.jenisArtikel}
               </Card.Title>
               <Card.Title>{article.judulArtikel.substring(0, 35)}</Card.Title>
-              <Card.Text>
-                {article.rangkuman.substring(0, 150)}....
-              </Card.Text>
+              <Card.Text>{article.rangkuman.substring(0, 150)}....</Card.Text>
               <div className="text-end linkaertikel d-flex justify-content-end">
-                <Button href={`/artikel/${article.id}`} className="btn fs-5 selengkapnya fw-semibold" style={{ backgroundColor: "#54BCA4", color: "#ffffff" }}>
+                <Button
+                  href={`/artikel/${article.id}`}
+                  className="btn fs-5 selengkapnya fw-semibold"
+                  style={{ backgroundColor: "#54BCA4", color: "#ffffff" }}
+                >
                   Selengkapnya
                 </Button>
               </div>
