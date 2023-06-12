@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Artikel.css";
 
 function CardArtikel() {
@@ -19,7 +20,7 @@ function CardArtikel() {
   return (
     <>
       {artikelList.map((artikel) => (
-        <Card key={artikel.id} className="col-lg-12 mb-5">
+        <Card key={artikel.id} className="col-lg-12 mb-1 p-3">
           <div className="row">
             <div className="col-lg-5">
               <div className="card-image">
@@ -31,13 +32,16 @@ function CardArtikel() {
                 <h4 className="text-warna jenis-artikel">{artikel.jenisArtikel}</h4>
                 <h6 className="card-title">{artikel.judulArtikel}</h6>
                 <p className="card-text text-justify">
-                  {/* {artikel.rangkuman} */}
                   {artikel.rangkuman.substring(0, 250)}
                 </p>
                 <div className="text-end">
-                  <a href={artikel.link} style={{ textDecoration: "none" }} className="text-warna card-link fw-semibold">
+                  <Link
+                    to={`/artikel/${artikel.id}`}
+                    style={{ textDecoration: "none" }}
+                    className="text-warna card-link fw-semibold"
+                  >
                     Selengkapnya
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
