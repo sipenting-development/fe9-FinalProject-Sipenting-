@@ -15,7 +15,7 @@ function Artikel(params) {
   }, []);
   console.log(Artikel);
   const fetchArtikel = () => {
-    fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel/1")
+    fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel/5")
       .then((response) => response.json())
       .then((data) => setArtikel(data))
       .catch((error) => console.log(error));
@@ -63,7 +63,7 @@ function Artikel(params) {
               </Container>
             </div>
           )}
-          <Container className="artikel mt-5">
+          <Container className="artikel mt-3">
             <Row>
               <Col>
                 <div className="text-center">

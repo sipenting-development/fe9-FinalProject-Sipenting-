@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Artikel.css";
 
@@ -43,26 +43,30 @@ function CardArtikel() {
 
   return (
     <>
-      <div className="mb-3">
-        <Button variant="primary" className="me-2" onClick={() => handleFilter("gizi")}>
-          Gizi
-        </Button>
-        <Button variant="primary" className="me-2" onClick={() => handleFilter("pencegahan")}>
-          Pencegahan
-        </Button>
-        <Button variant="primary" className="me-2" onClick={() => handleFilter("dampak")}>
-          Dampak
-        </Button>
-        <Button variant="primary" className="me-2" onClick={() => handleFilter("stunting")}>
-          Stunting
-        </Button>
-        <Button variant="primary" onClick={() => handleFilter(null)}>
+   <Row lg className="artikel-filter mb-3">
+      <Col lg={12} className="d-flex justify-content-center button-group pt-3 gap-5">
+        <Button variant="outline-light" onClick={() => handleFilter(null)}>
           All
         </Button>
-      </div>
-
+        <Button variant="outline-light" className="me-2" onClick={() => handleFilter("gizi")}>
+          Gizi
+        </Button>
+        <Button variant="outline-light" className="me-2" onClick={() => handleFilter("pencegahan")}>
+          Pencegahan
+        </Button>
+        <Button variant="outline-light" className="me-2" onClick={() => handleFilter("dampak")}>
+          Dampak
+        </Button>
+        <Button variant="outline-light" className="me-2" onClick={() => handleFilter("stunting")}>
+          Stunting
+        </Button>
+        <Button variant="outline-light" className="me-2" onClick={() => handleFilter("ho")}>
+          ho
+        </Button>
+      </Col>
+    </Row>
       {currentCards.length === 0 ? (
-        <p>Jenis artikel yang Anda pilih tidak ada.</p>
+        <p className="text-center mt-5 fs-5 fw-medium ">Jenis artikel yang Anda pilih tidak ada.</p>
       ) : (
         currentCards.map((artikel) => (
           <Card key={artikel.id} className="col-lg-12 mb-1 p-3">
@@ -96,7 +100,7 @@ function CardArtikel() {
       )}
 
       {/* Pagination */}
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center mt-5">
         <nav>
           <ul className="pagination">
             {Array(Math.ceil(filteredArtikelList.length / cardsPerPage))

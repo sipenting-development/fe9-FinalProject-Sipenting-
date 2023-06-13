@@ -22,35 +22,30 @@ function ArticleList() {
 
   return (
     <div className="row">
-      {articles.map((article) => (
-        <div className="col-md-4 row me-2 " key={article.id}>
-          <Card.Img
-            className="p-2"
-            src={article.gambar}
-            alt={article.judul}
-            style={{ objectFit: "cover", width: "100%", height: "250px" }}
-          />
-          <Card className="mb-4 shadow-sm mb-md-" style={{ width: "500px" }}>
-            <Card.Body className="artikel">
-              <Card.Title className="jenis-artikel fs-18 fw-semibold" style={{ color: "#54BCA4" }}>
-                {article.jenisArtikel}
-              </Card.Title>
-              <Card.Title>{article.judulArtikel.substring(0, 35)}</Card.Title>
-              <Card.Text>{article.rangkuman.substring(0, 150)}....</Card.Text>
-              <div className="text-end linkaertikel d-flex justify-content-end">
-                <Button
-                  href={`/artikel/${article.id}`}
-                  className="btn fs-5 selengkapnya fw-semibold"
-                  style={{ backgroundColor: "#54BCA4", color: "#ffffff" }}
-                >
-                  Selengkapnya
-                </Button>
-              </div>
-            </Card.Body>
-          </Card>
-        </div>
-      ))}
-    </div>
+    {articles.map((article) => (
+      <div className="col-md-4 mb-4" key={article.id}>
+        <Card className="h-100">
+          <Card.Img variant="top" src={article.gambar} alt={article.judul} />
+          <Card.Body className="d-flex flex-column">
+            <Card.Title className="jenis-artikel fs-18 fw-semibold" style={{ color: "#54BCA4" }}>
+              {article.jenisArtikel}
+            </Card.Title>
+            <Card.Title>{article.judulArtikel.substring(0, 35)}</Card.Title>
+            <Card.Text className="flex-grow-1">{article.rangkuman.substring(0, 150)}....</Card.Text>
+            <div className="d-flex justify-content-end">
+              <Button
+                href={`/artikel/${article.id}`}
+                className="btn fs-5 selengkapnya fw-semibold"
+                style={{ backgroundColor: "#54BCA4", color: "#ffffff" }}
+              >
+                Selengkapnya
+              </Button>
+            </div>
+          </Card.Body>
+        </Card>
+      </div>
+    ))}
+  </div>
   );
 }
 
