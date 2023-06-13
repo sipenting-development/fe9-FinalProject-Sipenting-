@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Artikel from "./pages/Artikel";
 import NotFound from "./pages/Notound";
 import ChatBox from "./pages/ChatBox";
+
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/cekgizi" element={<CekImt />} />
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/chat" element={<ChatBox />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
