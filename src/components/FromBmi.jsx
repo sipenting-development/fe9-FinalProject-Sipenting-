@@ -54,7 +54,7 @@ const BmiCalculator = () => {
           </Col>
         </Row>
         <div className="mt-4 text-center text-lg-center mb-5 mt-5">
-          <Button type="submit" className="btn-custom btclor py-2 px-5 rounded-5 fs-6" id="cekstunting1" style={{ backgroundColor: "#54bca4" }}>
+          <Button type="submit" className="btn-custom btclor py-2 px-5 rounded-5 fs-6" id="cekstunting1" style={{ backgroundColor: "#54bca4", borderColor: "white" }}>
             Mulai Cek
           </Button>
         </div>
