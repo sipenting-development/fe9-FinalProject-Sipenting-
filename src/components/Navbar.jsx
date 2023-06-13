@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation,Link } from "react-router-dom";
 import "./NavbarSipenting.css";
 
 function NavbarSipenting() {
@@ -35,9 +35,12 @@ function NavbarSipenting() {
               Artikel
             </Nav.Link>
           </Nav>
-          <Button variant="outline-success me-4" className="btndaftar">
+          <Link to={"/register"}>
+           <Button variant="outline-success me-4" className="btndaftar" style={getNavLinkStyle("/artikel")}>
             Daftar
-          </Button>
+            </Button>
+          </Link>
+
           <Button variant="outline-success" className="btnmasuk">
             Masuk
           </Button>

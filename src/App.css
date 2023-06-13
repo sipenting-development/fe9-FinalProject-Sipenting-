@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 } */
+.linear-bg{
+  background: linear-gradient(160.7deg, #7CBEB2 19.16%, #CCCE71 48.86%, #54BCA4 90.79%);
+  height: 100vh;
+}
+.bg-white{
+  background: white;
+  color: black;
+}
+
+.w-45{
+  width: 45%
+}
+
+.w-65{
+  width: 65%;
+}
+
+.fw-500{
+  font-weight: 500;
+  font-size: 20px;
+}
