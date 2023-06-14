@@ -39,10 +39,10 @@ const IsianArtikel = () => {
                 alt="Article"
               />
             </div>
-            <div className="container mt-5">
+            <div className="container mt-4">
               <div className="row">
                 <div className="col-lg-1">
-                  <div className="d-flex flex-lg-column justify-content icon-artikel mb-3 gap-3 fs-2">
+                  <div className="d-flex flex-lg-column justify-content icon-artikel mt-5 gap-3 fs-2">
                     <a href="# " className="me-3 text-decoration-none">
                       <FontAwesomeIcon
                         icon={faFacebook}
@@ -83,7 +83,7 @@ const IsianArtikel = () => {
                     </ol>
                   </nav>
 
-                  <p className="text-warna jenis-artikel fw-semibold">
+                  <p className="text-warna jenis-artikel fw-bold fs-3">
                     {artikelcontent.jenisArtikel}
                   </p>
                   <h1 className="judul-artikel mt-3 fw-semibold">
@@ -97,7 +97,7 @@ const IsianArtikel = () => {
                     </span>{" "}
                     : 15 Juli 2021{" "}
                   </h6>
-                  <div className="mt-3 text-justify">
+                  <div className="content-artikel mt-3 text-justify">
                     <p>
                       {artikelcontent.content1} {artikelcontent.content2}
                     </p>
@@ -133,7 +133,7 @@ const IsianArtikel = () => {
         )}
         <section className="artikel">
           <Container className="text-start">
-            <h3 className="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">
+            <h3 className="fw-bold ms-3 mt-4 mb-4 pt-5 fs-3">
               Artikel Terkait
             </h3>
             <Container>

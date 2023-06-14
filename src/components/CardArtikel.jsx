@@ -60,9 +60,6 @@ function CardArtikel() {
         <Button variant="outline-light" className="me-2" onClick={() => handleFilter("stunting")}>
           Stunting
         </Button>
-        <Button variant="outline-light" className="me-2" onClick={() => handleFilter("ho")}>
-          ho
-        </Button>
       </Col>
     </Row>
       {currentCards.length === 0 ? (
