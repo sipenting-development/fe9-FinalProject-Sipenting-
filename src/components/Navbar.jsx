@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, Link } from "react-router-dom";
 import "./NavbarSipenting.css";
 
 function NavbarSipenting() {
   const location = useLocation();
-
+  const isLogin = localStorage.getItem("user");
   const getNavLinkStyle = (path) => {
     if (path === location.pathname) {
       return { color: "#54BCA4", fontWeight: "bold" };
@@ -25,7 +25,7 @@ function NavbarSipenting() {
             <Nav.Link as={NavLink} exact={true.toString()} to="/" className="nav-link active pe-5" style={getNavLinkStyle("/")}>
               Beranda
             </Nav.Link>
-            <Nav.Link as={NavLink} exact={true.toString()} to="/konsultasi" className="nav-link pe-5" style={getNavLinkStyle("/konsultasi")}>
+            <Nav.Link as={NavLink} exact={true.toString()} to={isLogin ? "/konsultasi" : "/login"} className="nav-link pe-5" style={getNavLinkStyle("/konsultasi")}>
               Konsultasi
             </Nav.Link>
             <Nav.Link as={NavLink} exact={true.toString()} to="/cekgizi" className="nav-link pe-5" style={getNavLinkStyle("/cekgizi")}>
@@ -35,12 +35,33 @@ function NavbarSipenting() {
               Artikel
             </Nav.Link>
           </Nav>
-          <Button variant="outline-success me-4" className="btndaftar">
-            Daftar
-          </Button>
-          <Button variant="outline-success" className="btnmasuk">
-            Masuk
-          </Button>
+          {isLogin ? (
+            <>
+              <Button
+                onClick={() => {
+                  localStorage.removeItem("user");
+                  window.location.href = "/";
+                }}
+                variant="outline-success"
+                className="btnmasuk"
+              >
+                Log Out
+              </Button>
+            </>
+          ) : (
+            <>
+              <Link to={"/register"}>
+                <Button variant="outline-success me-4" className="btndaftar" style={getNavLinkStyle("/artikel")}>
+                  Daftar
+                </Button>
+              </Link>
+              <Link to={"/login"}>
+                <Button variant="outline-success" className="btnmasuk">
+                  Masuk
+                </Button>
+              </Link>
+            </>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>
