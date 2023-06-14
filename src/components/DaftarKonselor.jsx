@@ -3,7 +3,8 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../pages/konsultasi.css";
-const DaftarKonselor = ({ img, nama, pengalaman, ratings }) => {
+const DaftarKonselor = ({ img, nama, pengalaman, ratings, consultState }) => {
+  console.log(consultState);
   return (
     <Row className="conselor-box">
       <Col xs={4}>
@@ -17,17 +18,32 @@ const DaftarKonselor = ({ img, nama, pengalaman, ratings }) => {
             <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "23px", color: rating === "yellow" ? "#EBBB14" : "#F0F0F0" }} />
           ))}
         </div>
-        <Button
-          className="btn mt-3 rounded-pill px-4 py-2"
-          style={{
-            backgroundColor: "#54BCA4",
-            borderColor: "#54BCA4", // Menambahkan properti borderColor dengan nilai "white"
-          }}
-        >
-          <Link to="/chat" style={{ textDecoration: "none", color: "white" }}>
-            Konsultasi
-          </Link>
-        </Button>
+        {consultState ? (
+          <Button
+            className="btn mt-3 rounded-pill px-4 py-2"
+            disabled
+            style={{
+              backgroundColor: "#54BCA4",
+              borderColor: "#54BCA4", // Menambahkan properti borderColor dengan nilai "white"
+            }}
+          >
+            <Link to="/chat" state={{ myState: consultState }} style={{ textDecoration: "none", color: "white" }}>
+              Konsultasi
+            </Link>
+          </Button>
+        ) : (
+          <Button
+            className="btn mt-3 rounded-pill px-4 py-2"
+            style={{
+              backgroundColor: "#54BCA4",
+              borderColor: "#54BCA4", // Menambahkan properti borderColor dengan nilai "white"
+            }}
+          >
+            <Link to="/chat" state={{ myState: consultState }} style={{ textDecoration: "none", color: "white" }}>
+              Konsultasi
+            </Link>
+          </Button>
+        )}
       </Col>
     </Row>
   );

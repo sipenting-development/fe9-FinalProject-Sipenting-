@@ -5,8 +5,11 @@ import Stack from "react-bootstrap/Stack";
 import NavbarSipenting from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./konsultasi.css";
+import { UserContext } from "../context/UserContex";
+import { useContext } from "react";
 
 function Konsultasi() {
+  const { isConsulted, handleConsult } = useContext(UserContext);
   return (
     <>
       <div>
@@ -34,6 +37,7 @@ function Konsultasi() {
                     nama={"Endang Susiana, Sp.A."}
                     pengalaman={"5+ tahun pengalaman"}
                     ratings={["yellow", "yellow", "yellow", "#F0F0F0", "#F0F0F0"]}
+                    consultState={isConsulted}
                   />
                 </Col>
                 <Col lg={6} className="mb-5">
@@ -42,6 +46,7 @@ function Konsultasi() {
                     nama={"Hotman Aruan, Sp.A."}
                     pengalaman={"2+ tahun pengalaman"}
                     ratings={["yellow", "yellow", "yellow", "yellow", "#F0F0F0"]}
+                    consultState={isConsulted}
                   />
                 </Col>
                 <Col lg={6} className="mb-5">
@@ -50,6 +55,7 @@ function Konsultasi() {
                     nama={"Takasiani Antika, Sp.A."}
                     pengalaman={"3+ tahun pengalaman"}
                     ratings={["yellow", "yellow", "yellow", "yellow", "#F0F0F0"]}
+                    consultState={isConsulted}
                   />
                 </Col>
                 <Col lg={6} className="mb-5">
@@ -58,6 +64,7 @@ function Konsultasi() {
                     nama={"Devit Gurinda, Sp.A."}
                     pengalaman={"4+ tahun pengalaman"}
                     ratings={["yellow", "yellow", "yellow", "yellow", "#F0F0F0"]}
+                    consultState={isConsulted}
                   />
                 </Col>
               </Row>
