@@ -17,6 +17,7 @@ const IsianArtikel = () => {
   const { id } = useParams();
   const [artikelcontent, setArtikelContent] = useState({});
 
+  // console.log(id);
   useEffect(() => {
     fetch(`https://64539f69c18adbbdfea29dd5.mockapi.io/artikel/${id}`)
       .then((response) => response.json())
@@ -66,18 +67,18 @@ const IsianArtikel = () => {
 
                 <div className="col-lg-10 isi-artikel">
                   <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
+                    <ol className="breadcrumb">
+                      <li className="breadcrumb-item">
                         <a className="text-decoration-none" href="/">
                           Home
                         </a>
                       </li>
-                      <li class="breadcrumb-item">
+                      <li className="breadcrumb-item">
                         <a className="text-decoration-none" href="/artikel">
                           Artikel
                         </a>
                       </li>
-                      <li class="breadcrumb-item text-warna">
+                      <li className="breadcrumb-item text-warna">
                         {artikelcontent.judulArtikel}
                       </li>
                     </ol>

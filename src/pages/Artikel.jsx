@@ -13,7 +13,7 @@ function Artikel(params) {
   useEffect(() => {
     fetchArtikel();
   }, []);
-  console.log(Artikel);
+  // console.log(Artikel);
   const fetchArtikel = () => {
     fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel/5")
       .then((response) => response.json())
