@@ -1,0 +1,27 @@
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+.breadcrumb-item a {
+    color: #BEDED0;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+
+/* content artikel */
+.content-artikel {
+    text-align: justify;
+}
+
+.content-artikel p{
+    color: #1A2C24;
+    text-indent: 0.5in;
+}
+
