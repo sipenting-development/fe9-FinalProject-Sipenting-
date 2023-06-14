@@ -2,12 +2,6 @@ import { useContext, useState } from "react";
 
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
-<<<<<<< HEAD
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-=======
-
->>>>>>> 99d4ef27454b57eb7ca4b44778c3816732efa71a
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -130,13 +124,6 @@ const RegisterForm = () => {
                 </label>
                 <div className="input-group">
                   <input type={isShowPassword ? "text" : "password"} className="form-control rounded-pill" value={form.password} name="password" onChange={handleChange} placeholder="Input Password" id="exampleInputPassword1" />
-<<<<<<< HEAD
-                  <button type="button" className="btn btn-light" onClick={togglePasswordVisibility}>
-                    <FontAwesomeIcon icon={isShowPassword ? faEyeSlash : faEye} />
-                  </button>
-=======
-                 
->>>>>>> 99d4ef27454b57eb7ca4b44778c3816732efa71a
                 </div>
                 {error.password && <div className="text-danger mt-2">{error.password}</div>}
               </div>
