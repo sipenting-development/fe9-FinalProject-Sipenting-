@@ -27,6 +27,9 @@ const ChatBox = () => {
               Kembali ke Beranda
             </Button>
           </Link>
+          <Button variant="outline-success" className="btnmasuk rounded-5 mt5">
+            <a href="https://wa.me/+62895329165377">Lanjut Konsultasi</a>
+          </Button>
         </div>
       </Stack>
     </div>
