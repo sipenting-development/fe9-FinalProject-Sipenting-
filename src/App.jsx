@@ -5,10 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import IsianArtikel from "./pages/IsianArtikel";
 import Artikel from "./pages/Artikel";
 import NotFound from "./pages/Notound";
-
-
 import ChatBox from "./pages/ChatBox";
-
 import LoginRegister from "./pages/LoginRegister";
 import "./App.css";
 
