@@ -47,4 +47,4 @@ function ArticleList() {
   );
 }
 
-export default ArticleList;
+export default ArticleList;

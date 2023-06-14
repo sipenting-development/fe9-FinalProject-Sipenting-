@@ -13,8 +13,8 @@ const LoginForm = () => {
     password: "",
   });
   const [error, setError] = useState({
-    email: "",
-    password: "",
+    message: "",
+    status: false,
   });
 
   const handleChange = (e) => {
@@ -22,37 +22,43 @@ const LoginForm = () => {
     setForm({ ...form, [name]: value });
 
     if (name === "email" && value.trim() === "") {
-      setError({ ...error, email: "Email tidak boleh kosong!" });
+      setError({ ...error, message: "Email tidak boleh kosong!", status: true });
     } else if (name === "password" && value.trim() === "") {
-      setError({ ...error, password: "Password tidak boleh kosong!" });
-    } else if (name === "password" && value.length > 6) {
-      setError({ ...error, password: "Password maksimal 6 karakter!" });
+      setError({ ...error, message: "Password tidak boleh kosong!", status: true });
+    } else if (name === "password" && value.length <= 6) {
+      setError({ ...error, message: "Password minimal  6 karakter!", status: true });
     } else {
-      setError({ email: "", password: "" }); // Clear error messages if the fields are not empty or the password is within the limit
+      setError({ message: "", status: false }); // Clear error messages if the fields are not empty or the password is within the limit
     }
   };
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    console.log(error);
     console.log("login", form);
-    try {
-      const response = await axios.get("https://64539f69c18adbbdfea29dd5.mockapi.io/user");
-      if (response.status === 200) {
-        const users = await response.data;
-        const user = users.find((u) => u.email === form.email && u.password === form.password);
-        if (user) {
-          console.log("Login berhasil!");
-          localStorage.setItem("user", JSON.stringify(user));
-          alert("Login berhasil!");
-          navigate("/konsultasi"); // Redirect to the "konsultasi" page
-        } else {
-          console.log("email atau password salah!");
-          alert("email atau password salah!");
+
+    if (error.status === true) {
+      alert(error.message);
+    } else {
+      try {
+        const response = await axios.get("https://64539f69c18adbbdfea29dd5.mockapi.io/user");
+        if (response.status === 200) {
+          const users = await response.data;
+          const user = users.find((u) => u.email === form.email && u.password === form.password);
+          if (user) {
+            console.log("Login berhasil!");
+            localStorage.setItem("user", JSON.stringify(user));
+            alert("Login berhasil!");
+            navigate("/konsultasi"); // Redirect to the "konsultasi" page
+          } else {
+            console.log("email atau password salah!");
+            alert("email atau password salah!");
+          }
         }
+      } catch (error) {
+        console.error("An error occurred:", error);
+        alert("An error occurred. Please try again.");
       }
-    } catch (error) {
-      console.error("An error occurred:", error);
-      alert("An error occurred. Please try again.");
     }
   };
 
@@ -93,16 +99,7 @@ const LoginForm = () => {
                   Password
                 </label>
                 <div className="input-group">
-                  <input
-                    type={isShowpassword ? "text" : "password"}
-                    className="form-control rounded-pill"
-                    value={form.password}
-                    name="password"
-                    onChange={(e) => handleChange(e)}
-                    placeholder="Input Password"
-                    id="exampleInputPassword1"
-                  />
-                  
+                  <input type={isShowpassword ? "text" : "password"} className="form-control rounded-pill" value={form.password} name="password" onChange={(e) => handleChange(e)} placeholder="Input Password" id="exampleInputPassword1" />
                 </div>
                 {error.password && <div className="text-danger mt-2">{error.password}</div>}
               </div>
