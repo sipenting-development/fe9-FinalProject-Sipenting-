@@ -93,7 +93,7 @@ const BmiCalculator = () => {
             </div>
             <div className="col-lg-8 offset-lg-2 text-center">
               <Button variant="danger" className="mt-3" onClick={handleReset}>
-                Reset
+                Mulai Lagi
               </Button>
             </div>
           </div>
