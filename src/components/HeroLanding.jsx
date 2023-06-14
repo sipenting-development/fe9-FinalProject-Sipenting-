@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./herolanding.css";
+
 
 function HeroLanding() {
   return (

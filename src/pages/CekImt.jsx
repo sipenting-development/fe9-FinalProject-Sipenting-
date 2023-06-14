@@ -16,6 +16,7 @@ function CekImt(params) {
           <NavbarSipenting />
           <HeroCekKonsul
             img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/cekstunting_sxkcbq.png"}
+            coba={"Yuk Coba"}
             title={"Cek Status Gizi !"}
             descrip={
               "Pantau pertumbuhan dan perkembangan anak Anda secara berkala. Untuk mengetahui seberapa sehat anak Anda. Cek kondisi anak Anda bisa menggunakan layanan kami. "

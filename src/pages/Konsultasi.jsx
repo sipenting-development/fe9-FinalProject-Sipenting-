@@ -17,9 +17,11 @@ function Konsultasi() {
           <NavbarSipenting />
           <HeroCekKon
             img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717659/Assets/konsultasi_h27iqj.png"}
-            title={"Pilih Teman Konsultasimu !"}
+            coba={"Yuk Pilih"}
+            title={"Teman Konsultasi !"}
             descrip={"Dapatkan konsultasi medis anak yang cepat dan mudah dari dokter kami yang berpengalaman. Konsultasi medis anak yang nyaman dan aman dari rumah Anda sendiri. "}
           />
+
           <Alert className="mx-5 py-1 text-center konsul" variant="danger">
             Karena masih dalam tahap pengembangan, maka fitur konseling masih digratiskan.
           </Alert>
