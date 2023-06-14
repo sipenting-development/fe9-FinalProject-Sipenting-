@@ -1,9 +1,13 @@
 import { useContext, useState } from "react";
-import { AuthContext } from "../context/AuthContext";
+
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
+<<<<<<< HEAD
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+=======
+
+>>>>>>> 99d4ef27454b57eb7ca4b44778c3816732efa71a
 
 const RegisterForm = () => {
   const navigate = useNavigate();
@@ -91,18 +95,18 @@ const RegisterForm = () => {
           }}
         >
           <div className="justify-content-center">
-            <h1>Selamat Datang</h1>
-            <h1>Kembali di SIPENTING</h1>
+            <h1>Daftar</h1>
+            <h1>Akun di SIPENTING</h1>
             <div className="fw-500">
-              Belum memiliki akun?{" "}
+              Sudah memiliki akun?{" "}
               <Link
-                to={"/register"}
+                to={"/login"}
                 style={{
                   color: "#54BCA4",
                   textDecoration: "none",
                 }}
               >
-                Daftar
+                Masuk
               </Link>
             </div>
             <form onSubmit={onSubmit}>
@@ -126,9 +130,13 @@ const RegisterForm = () => {
                 </label>
                 <div className="input-group">
                   <input type={isShowPassword ? "text" : "password"} className="form-control rounded-pill" value={form.password} name="password" onChange={handleChange} placeholder="Input Password" id="exampleInputPassword1" />
+<<<<<<< HEAD
                   <button type="button" className="btn btn-light" onClick={togglePasswordVisibility}>
                     <FontAwesomeIcon icon={isShowPassword ? faEyeSlash : faEye} />
                   </button>
+=======
+                 
+>>>>>>> 99d4ef27454b57eb7ca4b44778c3816732efa71a
                 </div>
                 {error.password && <div className="text-danger mt-2">{error.password}</div>}
               </div>

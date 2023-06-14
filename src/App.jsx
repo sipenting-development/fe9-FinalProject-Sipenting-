@@ -5,9 +5,11 @@ import { Route, Routes } from "react-router-dom";
 import IsianArtikel from "./pages/IsianArtikel";
 import Artikel from "./pages/Artikel";
 import NotFound from "./pages/Notound";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99d4ef27454b57eb7ca4b44778c3816732efa71a
 import ChatBox from "./pages/ChatBox";
-
 import LoginRegister from "./pages/LoginRegister";
 import "./App.css";
 import { UserProvider } from "./context/UserContex";

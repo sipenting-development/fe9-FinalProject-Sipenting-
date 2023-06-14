@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import { AuthContext } from "../context/AuthContext";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -60,23 +59,16 @@ const LoginForm = () => {
   const isFormValid = form.email.trim() === "" || form.password.trim() === "";
 
   return (
-    <div className="d-flex flex-row">
-      <div className="linear-bg w-45">
-        <div className="d-flex align-items-center vh-100 justify-content-center">
-          <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1685717659/Assets/konsultasi_h27iqj.png" alt="" style={{ width: 500, height: 500 }} />
-        </div>
+    <div className="d-flex flex-column flex-md-row">
+      <div className="linear-bg d-flex align-items-center justify-content-center vh-100 w-100 w-md-50">
+        <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1685717659/Assets/konsultasi_h27iqj.png" alt="" style={{ width: "100%", maxWidth: 500, height: "auto" }} />
       </div>
-      <div className="bg-white w-65">
-        <div
-          className="d-flex justify-content-center px-5"
-          style={{
-            marginTop: "100px",
-          }}
-        >
-          <div className="justify-content-center">
-            <h1>Selamat Datang</h1>
-            <h1>Kembali di SIPENTING</h1>
-            <div className="fw-500">
+      <div className="bg-white w-100 w-md-50">
+        <div className="d-flex justify-content-center px-5 py-4">
+          <div className="w-100">
+            <h1 className="text-center mb-4">Selamat Datang</h1>
+            <h1 className="text-center mb-4">Kembali di SIPENTING</h1>
+            <div className="text-center mb-4">
               Belum memiliki akun?{" "}
               <Link
                 to={"/register"}
@@ -96,21 +88,21 @@ const LoginForm = () => {
                 <input type="email" value={form.email} name="email" onChange={(e) => handleChange(e)} className="form-control rounded-pill" placeholder="Input your Email" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 {error.email && <div className="text-danger mt-2">{error.email}</div>}
               </div>
-              <div className="input-group mb-3 d-flex">
-                <label htmlFor="exampleInputEmail1" className="form-label">
+              <div className="mb-3">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   Password
                 </label>
-                <div className="input-group mb-3">
+                <div className="input-group">
                   <input
                     type={isShowpassword ? "text" : "password"}
-                    className="form-control rounded"
+                    className="form-control rounded-pill"
                     value={form.password}
                     name="password"
                     onChange={(e) => handleChange(e)}
                     placeholder="Input Password"
-                    aria-label="Recipient's email"
-                    aria-describedby="button-addon2"
+                    id="exampleInputPassword1"
                   />
+                  
                 </div>
                 {error.password && <div className="text-danger mt-2">{error.password}</div>}
               </div>
