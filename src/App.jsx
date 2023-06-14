@@ -1,6 +1,3 @@
-import CekImt from "./pages/CekImt";
-import LandingPage from "./pages/LandingPage";
-import Konsultasi from "./pages/Konsultasi";
 import { Route, Routes } from "react-router-dom";
 import Artikel from "./pages/Artikel";
 import NotFound from "./pages/Notound";
@@ -20,6 +17,4 @@ function App() {
       </Routes>
     </>
   );
-}
-
-export default App;
+  }
