@@ -66,45 +66,90 @@ const LoginForm = () => {
 
   return (
     <div className="d-flex flex-column flex-md-row">
-      <div className="linear-bg d-flex align-items-center justify-content-center vh-100 w-100 w-md-50">
-        <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1685717659/Assets/konsultasi_h27iqj.png" alt="" style={{ width: "100%", maxWidth: 500, height: "auto" }} />
+      <div className="linear-bg w-100 xl-w-45">
+        <div className="d-flex align-items-center vh-100 justify-content-center">
+          <img
+            src="https://res.cloudinary.com/damsz0xlx/image/upload/v1685717659/Assets/konsultasi_h27iqj.png"
+            alt=""
+            style={{ width: "100%", height: "auto", maxWidth: 500, maxHeight: 500 }}
+          />
+        </div>
       </div>
-      <div className="bg-white w-100 w-md-50">
-        <div className="d-flex justify-content-center px-5 py-4">
-          <div className="w-100">
-            <h1 className="text-center mb-4">Selamat Datang</h1>
-            <h1 className="text-center mb-4">Kembali di SIPENTING</h1>
-            <div className="text-center mb-4">
+      <div className="bg-white w-100 xl-w-55">
+        <div
+          className="d-flex justify-content-center px-5"
+          style={{
+            marginTop: "100px",
+          }}
+        >
+          <div className="justify-content-center" style={{ marginBottom: "100px" }}>
+            <h1 style={{ fontWeight: "700", marginTop: "40px", color: "#3a3c3b" }}>Selamat Datang</h1>
+            <h1 style={{ fontWeight: "700", color: "#3a3c3b" }}>Kembali di SIPENTING</h1>
+            <div className="fw-500" style={{ marginTop: "10px", color: "#3a3c3b", fontSize: "20px" }}>
               Belum memiliki akun?{" "}
               <Link
                 to={"/register"}
                 style={{
                   color: "#54BCA4",
-                  textDecoration: "none",
+                  textDecoration: "underline",
                 }}
               >
                 Daftar
               </Link>
             </div>
             <form onSubmit={onSubmit}>
-              <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">
+              <div className="mb-3" style={{ marginTop: "20px" }}>
+                <label
+                  htmlFor="exampleInputEmail1"
+                  className="form-label fw-500"
+                  style={{ color: "#3a3c3b", fontSize: "16px" }}
+                >
                   Email
                 </label>
-                <input type="email" value={form.email} name="email" onChange={(e) => handleChange(e)} className="form-control rounded-pill" placeholder="Input your Email" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <input
+                  type="email"
+                  value={form.email}
+                  name="email"
+                  onChange={(e) => handleChange(e)}
+                  className="form-control rounded-pill"
+                  placeholder="Masukkan email"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
                 {error.email && <div className="text-danger mt-2">{error.email}</div>}
               </div>
               <div className="mb-3">
-                <label htmlFor="exampleInputPassword1" className="form-label">
+                <label
+                  htmlFor="exampleInputPassword1"
+                  className="form-label fw-500"
+                  style={{ color: "#3a3c3b", fontSize: "16px" }}
+                >
                   Password
                 </label>
                 <div className="input-group">
-                  <input type={isShowpassword ? "text" : "password"} className="form-control rounded-pill" value={form.password} name="password" onChange={(e) => handleChange(e)} placeholder="Input Password" id="exampleInputPassword1" />
+                  <input
+                    type={isShowpassword ? "text" : "password"}
+                    className="form-control rounded-pill"
+                    value={form.password}
+                    name="password"
+                    onChange={(e) => handleChange(e)}
+                    placeholder="Masukkan password"
+                    id="exampleInputPassword1"
+                  />
                 </div>
                 {error.password && <div className="text-danger mt-2">{error.password}</div>}
               </div>
-              <button disabled={isFormValid} className="btn btn-success w-100 rounded-pill">
-                Submit
+              <button
+                style={{
+                  marginTop: "20px",
+                  fontWeight: "600",
+                  backgroundColor: "#54bca4",
+                  border: "1px solid #54bca4",
+                }}
+                disabled={isFormValid}
+                className="btn btn-success w-100 rounded-pill"
+              >
+                Masuk
               </button>
             </form>
           </div>

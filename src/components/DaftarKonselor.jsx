@@ -11,8 +11,8 @@ const DaftarKonselor = ({ img, nama, pengalaman, ratings, consultState }) => {
         <img className="conselor-photo" src={img} alt="konselor1" style={{ width: "100%", maxWidth: "200px" }} />
       </Col>
       <Col xs={8}>
-        <h4 className="font-weight-bold  df">{nama}</h4>
-        <p className="df">{pengalaman}</p>
+        <h4 className="df" style={{fontWeight:"600", color:"#3a3c3b"}}>{nama}</h4>
+        <p className="df" style={{fontWeight:"500", color:"#98a09c"}}>{pengalaman}</p>
         <div className="rating-group">
           {ratings.map((rating, index) => (
             <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "23px", color: rating === "yellow" ? "#EBBB14" : "#F0F0F0" }} />
@@ -33,13 +33,14 @@ const DaftarKonselor = ({ img, nama, pengalaman, ratings, consultState }) => {
           </Button>
         ) : (
           <Button
-            className="btn mt-3 rounded-pill px-4 py-2"
+            className="btn btnkonselor mt-3 rounded-pill px-4 py-2"
             style={{
               backgroundColor: "#54BCA4",
-              borderColor: "#54BCA4", // Menambahkan properti borderColor dengan nilai "white"
+              borderColor: "#54BCA4",
+              fontWeight: "500" // Menambahkan properti borderColor dengan nilai "white"
             }}
           >
-            <Link to="/chat" state={{ myState: consultState }} style={{ textDecoration: "none", color: "white" }}>
+            <Link to="/chat" state={{ myState: consultState }} style={{ textDecoration: "none", color: "white", }}>
               Konsultasi
             </Link>
           </Button>

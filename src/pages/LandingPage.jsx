@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import HeroLanding from "../components/HeroLanding";
 import DataStunting from "../components/DataStunting";
 import CarouselLayanan from "../components/CarouselLayanan";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Stack } from "react-bootstrap";
 import ArticleList from "../components/ListArtikel";
 import DataSection from "../components/DataStunting";
 
