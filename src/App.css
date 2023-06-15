@@ -166,7 +166,7 @@
 
 .data-content .sub-title {
   color: var(--primary);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -180,8 +180,13 @@
   color: var(--font);
 }
 
+.card .card-text {
+  margin-top: -1px;
+}
+
 .data .card-body img {
   margin-bottom: 8px;
+  margin-top: -30px;
 }
 
 /* carousel */
