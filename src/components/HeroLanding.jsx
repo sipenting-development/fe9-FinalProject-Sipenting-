@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-
 function HeroLanding() {
   return (
     <div className="hero hero-view" id="hero">
