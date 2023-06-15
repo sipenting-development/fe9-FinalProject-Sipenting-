@@ -16,10 +16,10 @@ const BmiCalculator = () => {
   };
 
   return (
-    <Container className="mt-5  form">
-      <h3 className="fw-bold mt-7 mb-4 fs-3 text-center ">Masukkan Data Index Cek Gizi</h3>
+    <Container className="mt-3  form">
+      <h2 className="fw-bold mb-4 fs-3 text-center " style={{color:"#3a3c3b"}}>Masukkan Data Index Cek Gizi</h2>
       <Form onSubmit={handleSubmit} className="text-start fw-bold">
-        <Row className="mt-4">
+        <Row className="mt-5">
           <Col md={6}>
             <Form.Group>
               <Form.Label className="p-2 fs-6 fw-semibold fw-1">Nama Lengkap</Form.Label>
@@ -54,7 +54,7 @@ const BmiCalculator = () => {
           </Col>
         </Row>
         <div className="mt-4 text-center text-lg-center mb-5 mt-5">
-          <Button type="submit" className="btn-custom btclor py-2 px-5 rounded-5 fs-6" id="cekstunting1" style={{ backgroundColor: "#54bca4", borderColor: "white" }}>
+          <Button type="submit" className="btn-custom btclor py-2 px-5 rounded-5 fs-6 fw-semibold" id="cekstunting1" style={{ backgroundColor: "#54bca4", borderColor: "white" }}>
             Mulai Cek
           </Button>
         </div>
@@ -63,7 +63,7 @@ const BmiCalculator = () => {
       {hasil && (
         <Alert variant="success" className="mt-4  ">
           <div className="row ">
-            <div className="col-lg-8 offset-lg-2 d-flex align-items-center justify-content-center">
+            <div className="col-lg-8 offset-lg-2 d-flex align-items-center justify-content-center" style={{color:"#3a3c3b"}}>
               <div className="fw-semibold fs-5 float-start">
                 <div className="row">
                   <div className="col-md-7">Nama</div>
@@ -92,7 +92,7 @@ const BmiCalculator = () => {
               </div>
             </div>
             <div className="col-lg-8 offset-lg-2 text-center">
-              <Button variant="danger" className="mt-3" onClick={handleReset}>
+              <Button variant="danger" className="btn-custom btclor mt-3 py-2 px-5 rounded-5 fs-6 fw-semibold" onClick={handleReset}>
                 Mulai Lagi
               </Button>
             </div>

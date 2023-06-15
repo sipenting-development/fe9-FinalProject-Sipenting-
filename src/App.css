@@ -136,7 +136,6 @@
 
 .hero .btncek {
   padding: 0.5rem 2rem;
-  margin-left: -14px;
   font-size: 1rem;
   font-weight: bold;
   background-color: var(--primary);
@@ -216,7 +215,7 @@
 }
 
 .artikel .title-artikel {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--font);
 }
 
@@ -234,4 +233,46 @@
   background-color: var(--hoverbtn);
   color: var(--primary);
   border: 1px solid var(--primary);
+}
+
+/* footer */
+
+.footercolo {
+  background-color: var(--footer);
+}
+
+.footercolo .flogo {
+    margin-bottom: -10px;
+}
+
+.footercolo .fslogan {
+    line-height: 30px;
+}
+
+.footercolo hr {
+  margin-top: -40px;
+  border: none;
+  border-bottom: solid 3px var(--hr);
+  border-radius: 8px;
+}
+
+.footercolo .ficon {
+    margin-top: 20px;
+    margin-left: -12px;
+}
+
+.footercolo .dev {
+  font-weight: bold;
+}
+
+.footercolo .fcopyright {
+  margin-inline-end: 380px;
+}
+
+.footercolo .fsyarat {
+  margin-inline-end: 10px;
+}
+
+.footercolo .fkebijakan {
+  margin-inline-end: -10px;
 }

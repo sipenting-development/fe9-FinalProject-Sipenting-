@@ -8,7 +8,7 @@ function CardArtikel() {
   const [filteredArtikelList, setFilteredArtikelList] = useState([]);
   const [activeCategory, setActiveCategory] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardsPerPage] = useState(2);
+  const [cardsPerPage] = useState(4);
 
   useEffect(() => {
     fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
@@ -40,8 +40,8 @@ function CardArtikel() {
 
   return (
     <>
-      <Row lg className="artikel-filter mb-3">
-        <Col lg={12} className="d-flex justify-content-center button-group pt-3 gap-5">
+      <Row className="artikel-filter mb-3">
+        <Col lg={12} md={12} sm={12} className="d-flex justify-content-center flex-wrap pt-3 gap-3">
           <Button variant="outline-light" onClick={() => handleFilter(null)}>
             All
           </Button>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+
+import { Link } from "react-router-dom";
 
 function HeroLanding() {
   return (
@@ -15,28 +16,18 @@ function HeroLanding() {
                   Sistem <br /> Pencegahan Stunting
                 </span>
               </h1>
-              <p className="text-lg-start mt-lg-2 main-content fs-5">
-                SIPENTING merupakan layanan konsultasi stunting, cek stunting dan edukasi yang bertujuan untuk
-                pencegahan stunting pada masyakarat Indonesia.
-              </p>
+              <p className="text-lg-start mt-lg-2 main-content fs-5">SIPENTING merupakan layanan konsultasi stunting, cek stunting dan edukasi yang bertujuan untuk pencegahan stunting pada masyakarat Indonesia.</p>
 
               <div className="mt-4 text-lg-start">
-                <Button variant="cek" >
-                  <Link to="/cekgizi" className="rounded-5 btncek">
-                    Coba Cek Indeks Masa Tubuh
-                  </Link>
-                </Button>
+                <Link to="/cekgizi" className="rounded-5 btncek">
+                  Coba Cek Indeks Masa Tubuh
+                </Link>
               </div>
             </div>
           </Col>
           <Col lg={6}>
             <div className="text-center text-lg-start mt-3">
-              <img
-                src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/hero_e6ssza.png"
-                className="hero-img img-fluid float-end mx-5"
-                style={{ width: "75%" }}
-                alt="Hero"
-              />
+              <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/hero_e6ssza.png" className="hero-img img-fluid float-end mx-5" style={{ width: "75%" }} alt="Hero" />
             </div>
           </Col>
         </Row>
