@@ -27,15 +27,15 @@ function Artikel(params) {
         <Stack gap={3}>
           <NavbarSipenting />
           {Artikel && (
-            <div className="hero-artikel ">
-              <Container>
+            <div className="hero-artikel">
+              <Container className="mt-4 text-center  ">
                 <Row className="align-items-center">
-                  <Col lg={4} className="py-lg-5 hero-artikel-content">
+                  <Col lg={4} className="py-lg-5 text-center text-lg-start ">
                     <div className="py-5">
-                      <h5 className="text-lg-start fw-bold text-warna fs-4">{Artikel.jenisArtikel}</h5>
-                      <h1 className="text-lg-start main-title judul-list-artikel">{Artikel.judulArtikel}</h1>
-                      <p className="text-lg-start main-content fw-light hero-artikel-deskripsi fs-4 fw-normal">{Artikel.rangkuman}</p>
-                      <Link to={`/artikel/${Artikel.id}`} style={{ textDecoration: "none" }} className="text-warna fw-semibold fs-4">
+                      <h5 className="fw-bold text-warna fs-4">{Artikel.jenisArtikel}</h5>
+                      <h1 className="main-title judul-list-artikel fs-3">{Artikel.judulArtikel}</h1>
+                      <p className="fw-light hero-artikel-deskripsi fs-5 fw-normal">{Artikel.rangkuman}</p>
+                      <Link to={`/artikel/${Artikel.id}`} style={{ textDecoration: "none" }} className="text-warna fw-semibold fs-5">
                         Selengkapnya
                       </Link>
                     </div>

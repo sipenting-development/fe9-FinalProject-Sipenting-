@@ -2,13 +2,16 @@
 .judul-list-artikel {
   font-size: 44px;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 .text-warna {
   color: #54bca4;
 }
 
 /* -------------------------------------------------------- Artikel Filter Start--------------------------------------- */
-
 
 .artikel-filter button {
   align-items: center;
@@ -18,25 +21,24 @@
   font-size: 18px;
   width: 200px;
   height: 50px;
-  color: #54BCA4;
-  border: solid 1px #54BCA4;
+  color: #54bca4;
+  border: solid 1px #54bca4;
   outline: none; /* Remove the default outline */
 }
 
 .artikel-filter button:hover {
   background-color: #eefcf3;
-  color: #54BCA4;
-  border: 1px solid #54BCA4;
+  color: #54bca4;
+  border: 1px solid #54bca4;
 }
 
 /* active */
 
 .artikel-filter button:focus {
-  background-color: #54BCA4;
+  background-color: #54bca4;
   color: white;
-  border: 1px solid #54BCA4;
+  border: 1px solid #54bca4;
 }
-
 
 /* -------------------------------------------------------- Artikel Filter End--------------------------------------- */
 
@@ -107,7 +109,6 @@
   color: #54bca4;
 }
 
-
 /* -------------------------------------------------------- Paggination Start--------------------------------------- */
 
 .pagination {
@@ -132,6 +133,3 @@
 }
 
 /* -------------------------------------------------------- Paggination End--------------------------------------- */
-
-
-

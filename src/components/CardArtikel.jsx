@@ -40,8 +40,8 @@ function CardArtikel() {
 
   return (
     <>
-      <Row lg className="artikel-filter mb-3">
-        <Col lg={12} className="d-flex justify-content-center button-group pt-3 gap-5">
+      <Row className="artikel-filter mb-3">
+        <Col lg={12} md={12} sm={12} className="d-flex justify-content-center flex-wrap pt-3 gap-3">
           <Button variant="outline-light" onClick={() => handleFilter(null)}>
             All
           </Button>
