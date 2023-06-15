@@ -156,3 +156,42 @@
   border-bottom: solid 4px var(--hr);
   border-radius: 8px;
 }
+
+/* Data Stunting */
+
+.data {
+  margin-bottom: 100px;
+  color: var(--font);
+}
+
+.data-content .sub-title {
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.data .card {
+  border-width: 4px;
+  border-color: var(--primary);
+  border-radius: 16px;
+}
+
+.card .card-title {
+  color: var(--font);
+}
+
+.data .card-body img {
+  margin-bottom: 8px;
+}
+
+/* carousel */
+
+.layanan-kami h2 {
+  color: var(--font);
+}
+
+.carousel .carousel-indicators button {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}

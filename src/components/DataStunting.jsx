@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Card } from "react-bootstrap";
-import "./datastunting.css";
 
 const DataSection = ({ img, title, cardText1, cardText2 }) => {
   return (
@@ -16,5 +15,4 @@ const DataSection = ({ img, title, cardText1, cardText2 }) => {
     </>
   );
 };
-
 export default DataSection;
