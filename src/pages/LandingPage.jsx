@@ -26,11 +26,11 @@ function LandingPage() {
         </Container>
       </section>
       <CarouselLayanan />
-      <section className="artikel">
+      <section className="artikel  mt-5">
         <Container className="text-start">
-          <h3 className="fw-bold ms-3 mb-4 pt-2 fs-3">Artikel Terkait</h3>
+          <h2 className="fw-bold ms-3 mb-4 pt-2 text-center">Artikel Terkait</h2>
           <Container>
-            <Row>
+            <Row className="mt-5">
               <ArticleList />
             </Row>
           </Container>
