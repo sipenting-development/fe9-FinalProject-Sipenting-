@@ -33,6 +33,7 @@ function ArticleList() {
                 </Card.Title>
                 <Card.Title className="fs-5 title-artikel">{article.judulArtikel.substring(0, 35)}</Card.Title>
                 <Card.Text className="flex-grow-1 fs-6">{article.rangkuman.substring(0, 150)}....</Card.Text>
+
                 <div className="d-flex justify-content-center">
                   <Button
                     href={`/artikel/${article.id}`}

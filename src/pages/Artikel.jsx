@@ -27,36 +27,22 @@ function Artikel(params) {
         <Stack gap={3}>
           <NavbarSipenting />
           {Artikel && (
-            <div className="hero-artikel mt-5">
+            <div className="hero-artikel ">
               <Container>
                 <Row className="align-items-center">
                   <Col lg={4} className="py-lg-5 hero-artikel-content">
                     <div className="py-5">
-                      <h5 className="text-lg-start fw-bold text-warna fs-4">
-                        {Artikel.jenisArtikel}
-                      </h5>
-                      <h1 className="text-lg-start main-title judul-list-artikel">
-                        {Artikel.judulArtikel}
-                      </h1>
-                      <p className="text-lg-start main-content fw-light hero-artikel-deskripsi fs-4 fw-normal">
-                        {Artikel.rangkuman}
-                      </p>
-                      <Link
-                      to={`/artikel/${Artikel.id}`}
-                      style={{ textDecoration: "none" }}
-                      className="text-warna fw-semibold fs-4"
-                      >
+                      <h5 className="text-lg-start fw-bold text-warna fs-4">{Artikel.jenisArtikel}</h5>
+                      <h1 className="text-lg-start main-title judul-list-artikel">{Artikel.judulArtikel}</h1>
+                      <p className="text-lg-start main-content fw-light hero-artikel-deskripsi fs-4 fw-normal">{Artikel.rangkuman}</p>
+                      <Link to={`/artikel/${Artikel.id}`} style={{ textDecoration: "none" }} className="text-warna fw-semibold fs-4">
                         Selengkapnya
                       </Link>
                     </div>
                   </Col>
                   <Col lg={8} className="hero-artikel-image">
                     <div className="text-center text-lg-center mt-5">
-                      <img
-                        src={Artikel.gambar}
-                        className="hero-img img-fluid"
-                        alt="Hero"
-                      />
+                      <img src={Artikel.gambar} className="hero-img img-fluid" alt="Hero" />
                     </div>
                   </Col>
                 </Row>

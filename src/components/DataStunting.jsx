@@ -8,8 +8,9 @@ const DataSection = ({ img, title, cardText1, cardText2 }) => {
         <Card.Body className="d-flex flex-column align-items-center">
           <Card.Img src={img} alt="" style={{ maxWidth: "60px", maxHeight: "60px" }} className="mb-3" />
           <Card.Title className="card-title fw-bold fs-4">{title}</Card.Title>
-          <Card.Text className="card-text sub-title">{cardText1}</Card.Text>
-          <Card.Text className="card-text sub-title">{cardText2}</Card.Text>
+
+          <Card.Text className="card-text">{cardText1}</Card.Text>
+          <Card.Text className="card-text mt-1">{cardText2}</Card.Text>
         </Card.Body>
       </Card>
     </>
