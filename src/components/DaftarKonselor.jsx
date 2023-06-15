@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { Button, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../pages/konsultasi.css";
+
 const DaftarKonselor = ({ img, nama, pengalaman, ratings, consultState }) => {
   console.log(consultState);
   return (
