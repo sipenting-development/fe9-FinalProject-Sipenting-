@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function HeroLanding() {
   return (
@@ -21,11 +21,9 @@ function HeroLanding() {
               </p>
 
               <div className="mt-4 text-lg-start">
-                <Button variant="cek" >
-                  <Link to="/cekgizi" className="rounded-5 btncek">
-                    Coba Cek Indeks Masa Tubuh
-                  </Link>
-                </Button>
+                <Link to="/cekgizi" className="rounded-5 btncek">
+                  Coba Cek Indeks Masa Tubuh
+                </Link>
               </div>
             </div>
           </Col>
