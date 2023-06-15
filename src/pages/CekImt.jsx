@@ -6,7 +6,6 @@ import NavbarSipenting from "../components/Navbar";
 import Stack from "react-bootstrap/Stack";
 import { Link } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
-import "../components/cekimt.css";
 import ArticleList from "../components/ListArtikel";
 function CekImt(params) {
   return (
@@ -29,7 +28,7 @@ function CekImt(params) {
 
           <section className="artikel">
             <Container className="text-start">
-              <h3 className="fw-bold ms-3 mb-4 pt-2 text-start mt-5">Artikel Terkait</h3>
+              <h3 className="fw-bold ms-3 mb-4 pt-2 text-start mt-4">Artikel Terkait</h3>
               <Container>
                 <Row className="mt-5">
                   <ArticleList />

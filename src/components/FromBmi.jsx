@@ -16,7 +16,7 @@ const BmiCalculator = () => {
   };
 
   return (
-    <Container className="mt-5  form">
+    <Container className="mt-3  form">
       <h2 className="fw-bold mb-4 fs-3 text-center " style={{color:"#3a3c3b"}}>Masukkan Data Index Cek Gizi</h2>
       <Form onSubmit={handleSubmit} className="text-start fw-bold">
         <Row className="mt-5">
