@@ -8,7 +8,7 @@ function CardArtikel() {
   const [filteredArtikelList, setFilteredArtikelList] = useState([]);
   const [activeCategory, setActiveCategory] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardsPerPage] = useState(2);
+  const [cardsPerPage] = useState(4);
 
   useEffect(() => {
     fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
