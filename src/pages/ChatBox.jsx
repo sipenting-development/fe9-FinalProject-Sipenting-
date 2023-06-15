@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Crisp } from "crisp-sdk-web";
 import { Stack, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import "./notfound.css";
 import { useContext, useEffect } from "react";
 import { UserContext } from "../context/UserContex";
 import "../App.css";
