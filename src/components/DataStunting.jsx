@@ -9,7 +9,7 @@ const DataSection = ({ img, title, cardText1, cardText2 }) => {
           <Card.Img src={img} alt="" style={{ maxWidth: "100px", maxHeight: "100px" }} className="mb-3" />
           <Card.Title className="card-title fw-bold fs-4">{title}</Card.Title>
           <Card.Text className="card-text">{cardText1}</Card.Text>
-          <Card.Text className="card-text">{cardText2}</Card.Text>
+          <Card.Text className="card-text mt-1">{cardText2}</Card.Text>
         </Card.Body>
       </Card>
     </>
