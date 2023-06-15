@@ -23,7 +23,7 @@ function Konsultasi() {
           
           
           <div className="container">
-          <Alert className="py-1 text-center konsul" variant="danger">
+          <Alert className="py-1 text-center konsul" variant="danger" style={{marginBottom:"50px"}}>
             Karena masih dalam tahap pengembangan, maka fitur konseling masih digratiskan.
           </Alert>
           </div>
@@ -32,7 +32,7 @@ function Konsultasi() {
           <div className="container mb-5">
             <div className="d-flex justify-content-between mb-5 conselor-sections">
               <div className="mx-auto">
-                <h4 className="mt-5 fw-bold fs-3 ms-5 df">Daftar Konselor Kami</h4>
+                <h2 className="fw-bold ms-3 mb-4 pt-2 text-center" style={{color:"#3a3c3b"}}>Daftar Konselor Kami</h2>
               </div>
             </div>
 

@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
+import { Link } from "react-router-dom";
+
 function HeroLanding() {
   return (
     <div className="hero hero-view" id="hero">
@@ -17,9 +19,9 @@ function HeroLanding() {
               <p className="text-lg-start mt-lg-2 main-content fs-5">SIPENTING merupakan layanan konsultasi stunting, cek stunting dan edukasi yang bertujuan untuk pencegahan stunting pada masyakarat Indonesia.</p>
 
               <div className="mt-4 text-lg-start">
-                <Button variant="cek" className="rounded-5 btncek">
+                <Link to="/cekgizi" className="rounded-5 btncek">
                   Coba Cek Indeks Masa Tubuh
-                </Button>
+                </Link>
               </div>
             </div>
           </Col>

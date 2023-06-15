@@ -45,7 +45,7 @@ function Footer(params) {
                     Beranda
                   </a>
                   <a className="d-block text-white mb-3 text-decoration-none fs-6" href="/">
-                    Cek IMT
+                    Cek Gizi
                   </a>
                   <a className="d-block text-white mb-3 text-decoration-none fs-6" href="/">
                     Layanan Kami
@@ -67,7 +67,7 @@ function Footer(params) {
                     Konsultasi
                   </a>
                   <a className="d-block text-white mb-3 text-decoration-none fs-6" href="/">
-                    Cek IMT
+                    Cek Gizi
                   </a>
                   <a className="d-block text-white mb-3 text-decoration-none fs-6" href="/">
                     Artikel

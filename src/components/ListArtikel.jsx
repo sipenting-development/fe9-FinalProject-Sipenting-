@@ -35,7 +35,11 @@ function ArticleList() {
                 <Card.Text className="flex-grow-1 fs-6">{article.rangkuman.substring(0, 150)}....</Card.Text>
 
                 <div className="d-flex justify-content-center">
-                  <Button href={`/artikel/${article.id}`} className="btnselengkapnya fs-6 rounded-pill w-100">
+                  <Button
+                    href={`/artikel/${article.id}`}
+                    className="btnselengkapnya fs-6 rounded-pill w-100"
+                    style={{ padding: "0.5rem 2rem" }}
+                  >
                     Selengkapnya
                   </Button>
                 </div>
