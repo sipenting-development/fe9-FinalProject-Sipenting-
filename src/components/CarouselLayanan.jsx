@@ -66,11 +66,11 @@ function LayananKamiSection() {
             </div>
             <div className="col-sm-5 text-center pb-4 me-4 mb-5">
               <h5 className="fw-semibold" style={{ color: "#54bca4" }}>
-                Cek Stunting
+                Cek Gizi
               </h5>
               <p style={{ color: "#1B443B" }}>
                 Melalui pengecekan, dapat mengetahui apakah pertumbuhan anak optimal atau tidak. Melalui pengecekan
-                stunting pada website kami.
+                gizi pada website kami.
               </p>
             </div>
           </div>
