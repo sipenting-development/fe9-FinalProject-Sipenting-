@@ -63,8 +63,8 @@ function CardArtikel() {
         <p className="text-center mt-5 fs-5 fw-medium ">Jenis artikel yang Anda pilih tidak ada.</p>
       ) : (
         currentCards.map((artikel) => (
-          <Card key={artikel.id} className="col-lg-12 mb-1 p-3">
-              <div className="row">
+          <Card key={artikel.id} className="col-lg-12 mb-5 mt-5 p-3 shadow-sm ">
+            <div className="row ">
               <div className="col-lg-5">
                 <div className="card-image">
                   <img className="float-center img-fluid" style={{ width: "500px", height: "250px" }} src={artikel.gambar} alt="Card" />
