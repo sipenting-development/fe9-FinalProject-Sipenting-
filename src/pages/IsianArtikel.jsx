@@ -5,7 +5,6 @@ import { useParams } from "react-router-dom";
 import NavbarSipenting from "../components/Navbar";
 import ArticleList from "../components/ListArtikel";
 import Footer from "../components/Footer";
-import "../components/IsianArtikel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
