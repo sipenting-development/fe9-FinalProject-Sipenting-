@@ -27,8 +27,8 @@ function CekImt(params) {
           </BmiProvider>
 
           <section className="artikel">
-            <Container className="text-start">
-              <h3 className="fw-bold ms-3 mb-4 pt-2 text-start mt-4">Artikel Terkait</h3>
+            <Container className="text-center text-lg-start md-5 mb-5">
+              <h3 className="fw-bold mb-4 pt-2 mt-4">Artikel Terkait</h3>
               <Container>
                 <Row className="mt-5">
                   <ArticleList />

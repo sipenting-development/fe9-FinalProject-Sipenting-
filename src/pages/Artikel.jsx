@@ -24,24 +24,24 @@ function Artikel(params) {
   return (
     <>
       <div>
-        <Stack gap={3}>
+        <Stack gap={4}>
           <NavbarSipenting />
           {Artikel && (
-            <div className="hero-artikel">
-              <Container className="mt-4 text-center  ">
+            <div className="hero-artikel mt-5">
+              <Container className="mt-5 text-center  ">
                 <Row className="align-items-center">
-                  <Col lg={4} className="py-lg-5 text-center text-lg-start ">
+                  <Col lg={5} className="py-lg-5 text-start text-lg-start ">
                     <div className="py-5">
-                      <h5 className="fw-bold text-warna fs-4">{Artikel.jenisArtikel}</h5>
-                      <h1 className="main-title judul-list-artikel fs-3">{Artikel.judulArtikel}</h1>
-                      <p className="fw-light hero-artikel-deskripsi fs-5 fw-normal">{Artikel.rangkuman}</p>
-                      <Link to={`/artikel/${Artikel.id}`} style={{ textDecoration: "none" }} className="text-warna fw-semibold fs-5">
+                      <h3 className="text-warna fs-5" style={{fontWeight:"700"}}>{Artikel.jenisArtikel}</h3>
+                      <h1 className="main-title judul-list-artikel fs-2" style={{color:"#3a3c3b", fontWeight:"600"}}>{Artikel.judulArtikel}</h1>
+                      <p className="fw-light hero-artikel-deskripsi fs-5 fw-normal" style={{ lineHeight: "34px" }}>{Artikel.rangkuman}</p>
+                      <Link to={`/artikel/${Artikel.id}`} style={{ textDecoration: "none" }} className="text-warna fw-bold fs-5">
                         Selengkapnya
                       </Link>
                     </div>
                   </Col>
-                  <Col lg={8} className="hero-artikel-image">
-                    <div className="text-center text-lg-center mt-5">
+                  <Col lg={7} className="hero-artikel-image py-5">
+                    <div className="text-center text-lg-center mt-3">
                       <img src={Artikel.gambar} className="hero-img img-fluid" alt="Hero" />
                     </div>
                   </Col>
@@ -53,7 +53,7 @@ function Artikel(params) {
             <Row>
               <Col>
                 <div className="text-center">
-                  <h1 className="fw-bold">Artikel Terbaru</h1>
+                  <h2 className="fw-bold">Artikel Terbaru</h2>
                 </div>
               </Col>
             </Row>

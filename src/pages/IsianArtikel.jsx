@@ -77,19 +77,19 @@ const IsianArtikel = () => {
                           Artikel
                         </a>
                       </li>
-                      <li className="breadcrumb-item text-warna">
+                      <li className="breadcrumb-item text-warna" style={{fontWeight:"600"}}>
                         {artikelcontent.judulArtikel}
                       </li>
                     </ol>
                   </nav>
 
-                  <p className="text-warna jenis-artikel fw-bold fs-3">
+                  <p className="text-warna jenis-artikel fw-bold fs-4">
                     {artikelcontent.jenisArtikel}
                   </p>
                   <h1 className="judul-artikel mt-3 fw-semibold">
                     {artikelcontent.judulArtikel}
                   </h1>
-                  <h6 className="tinjauan mt-3">
+                  <h6 className="tinjauan mt-3" style={{color:"#3a3c3b"}}>
                     Ditinjau oleh:{" "}
                     <span className="text-warna">
                       {" "}
@@ -98,31 +98,31 @@ const IsianArtikel = () => {
                     : 15 Juli 2021{" "}
                   </h6>
                   <div className="content-artikel mt-3 text-justify">
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content1} {artikelcontent.content2}
                     </p>
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content3} {artikelcontent.content4}
                     </p>
 
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content1} {artikelcontent.content2}
                     </p>
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content3} {artikelcontent.content4}
                     </p>
 
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content1} {artikelcontent.content2}
                     </p>
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content3} {artikelcontent.content4}
                     </p>
 
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content1} {artikelcontent.content2}
                     </p>
-                    <p>
+                    <p style={{color:"#3a3c3b"}}>
                       {artikelcontent.content3} {artikelcontent.content4}
                     </p>
                   </div>
@@ -132,11 +132,11 @@ const IsianArtikel = () => {
           </div>
         )}
         <section className="artikel">
-          <Container className="text-start">
-            <h3 className="fw-bold ms-3 mt-4 mb-4 pt-5 fs-3">
+          <Container className="text-center text-lg-start md-5 mb-5">
+            <h3 className="fw-bold mb-4 pt-2 mt-4">
               Artikel Terkait
             </h3>
-            <Container>
+            <Container className="mt-5">
               <Row>
                 <ArticleList />
               </Row>

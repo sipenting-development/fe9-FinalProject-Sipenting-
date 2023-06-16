@@ -72,11 +72,11 @@ function CardArtikel() {
               </div>
               <div className="col-lg-7">
                 <div className="card-body">
-                  <h4 className="text-warna jenis-artikel fs-4">{artikel.jenisArtikel}</h4>
-                  <h6 className="card-title fs-6">{artikel.judulArtikel}</h6>
+                  <h4 className="text-warna jenis-artikel fs-6">{artikel.jenisArtikel}</h4>
+                  <h6 className="card-title fs-4 fw-semibold">{artikel.judulArtikel}</h6>
                   <p className="card-text text-justify fs-6">{artikel.rangkuman.substring(0, 250)}</p>
                   <div className="text-end">
-                    <Link to={`/artikel/${artikel.id}`} style={{ textDecoration: "none" }} className="text-warna card-link fw-semibold">
+                    <Link to={`/artikel/${artikel.id}`} style={{ textDecoration: "none" }} className="text-warna card-link fs-6 fw-semibold">
                       Selengkapnya
                     </Link>
                   </div>
