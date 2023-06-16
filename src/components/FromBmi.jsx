@@ -92,7 +92,7 @@ const BmiCalculator = () => {
               </div>
             </div>
             <div className="col-lg-8 offset-lg-2 text-center">
-              <Button variant="danger" className="btn-custom btclor mt-3 py-2 px-5 rounded-5 fs-6 fw-semibold" onClick={handleReset}>
+              <Button variant="danger" className="btn-custom mt-3 py-2 px-5 rounded-5 fs-6 fw-semibold" onClick={handleReset}>
                 Mulai Lagi
               </Button>
             </div>
