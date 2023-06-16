@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import CekImt from "./pages/CekImt";
+import LandingPage from "./pages/LandingPage";
+import Konsultasi from "./pages/Konsultasi";
+import { Route, Routes } from "react-router-dom";
+import IsianArtikel from "./pages/IsianArtikel";
+import Artikel from "./pages/Artikel";
+import NotFound from "./pages/Notound";
+
+import ChatBox from "./pages/ChatBox";
+import LoginRegister from "./pages/LoginRegister";
+import "./App.css";
+import { UserProvider } from "./context/UserContex";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <UserProvider>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/" index element={<LandingPage />} />
+          <Route path="/konsultasi" element={<Konsultasi />} />
+          <Route path="/cekgizi" element={<CekImt />} />
+          <Route path="/chat" element={<ChatBox />} />
+          <Route path="/artikel" element={<Artikel />} />
+
+          <Route path="/artikel/:id" element={<IsianArtikel />} />
+          {/* <Route path="/chat" element={<ChatBox />} /> */}
+
+          <Route path="*" element={<NotFound />} />
+
+          <Route path="/login" element={<LoginRegister />} />
+          <Route path="/register" element={<LoginRegister />} />
+        </Routes>
+      </UserProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
