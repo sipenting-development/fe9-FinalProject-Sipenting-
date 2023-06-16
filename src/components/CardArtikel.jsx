@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Artikel.css";
+
 
 function CardArtikel() {
   const [artikelList, setArtikelList] = useState([]);

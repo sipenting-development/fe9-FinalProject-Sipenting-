@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import NavbarSipenting from "../components/Navbar";
 import CardArtikel from "../components/CardArtikel";
 import Footer from "../components/Footer";
-import "../components/Artikel.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
