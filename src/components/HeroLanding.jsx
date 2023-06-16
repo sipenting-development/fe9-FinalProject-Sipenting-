@@ -20,7 +20,7 @@ function HeroLanding() {
 
               <div className="mt-4 text-lg-start">
                 <Link to="/cekgizi" className="rounded-5 btncek">
-                  Coba Cek Indeks Masa Tubuh
+                  Coba Cek Gizi
                 </Link>
               </div>
             </div>
