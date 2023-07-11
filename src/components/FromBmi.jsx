@@ -23,7 +23,8 @@ const BmiCalculator = () => {
           <Col md={6}>
             <Form.Group>
               <Form.Label className="p-2 fs-6 fw-semibold fw-1">Nama Lengkap</Form.Label>
-              <Form.Control className="rounded-5" type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder="Masukkan Nama" required />
+              <Form.Control className="rounded-5" type="text" value={nama} onChange={(e) => setNama(e.target.value)} placeholder="Masukkan Nama" required pattern="[A-Za-z\s]*" // Hanya huruf dan spasi yang diperbolehkan
+              title="Mohon masukkan hanya huruf dan spasi"/>
             </Form.Group>
             <Form.Group>
               <Form.Label className="p-2 fs-6 fw-semibold">Pilih Jenis Kelamin</Form.Label>
