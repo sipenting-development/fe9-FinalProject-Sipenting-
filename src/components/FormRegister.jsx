@@ -26,8 +26,8 @@ const RegisterForm = () => {
       setError({ ...error, message: "Password tidak boleh kosong!", status: true });
     } else if (name === "username" && value.trim() === "") {
       setError({ ...error, message: "Username tidak boleh kosong!", status: true });
-    } else if (name === "password" && value.length <= 6) {
-      setError({ ...error, message: "Password manimal 6 karakter!", status: true });
+    } else if (name === "password" && value.length < 6) {
+      setError({ ...error, message: "Password minimal 6 karakter!", status: true });
     } else {
       setError({ message: "", status: false });
     } // Clear error messages if the fields are not empty or the password is within the limit
